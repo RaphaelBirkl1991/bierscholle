@@ -1,0 +1,14 @@
+[
+  {
+    "type": "sofort Lieferung:",
+    "price": 6.90
+  },
+  {
+    "type": "Morgen",
+    "price": 4.90
+  },
+  {
+    "type": "Per Post",
+    "price": 3.90
+  }
+]

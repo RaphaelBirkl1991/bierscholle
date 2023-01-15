@@ -10,7 +10,14 @@ export const produkts = [
     id: 1,
     name: 'Giesinger',
     price: 1.82,
-    beschreibung: 'Mittlerweile wohl eines der beliebtesten Biere Münchens.'
+    beschreibung: 'Mittlerweile wohl eines der beliebtesten Biere Münchens. Untergärig gebraut nach dem ' +
+      'Reinheitsgebot' +
+      ' von 1516. Mit Wasser aus unserem eigenen Tiefbrunnen. Unser Flaggschiff. Schmeckt. Gut. Leuchtend goldgelb. ' +
+      'Mit kompaktem, weißem Schaum und leichter Trübung. Seine Fans freuen sich auf frisches Hopfenaroma,' +
+      ' den vollmundigen Antrunk und das geschmeidige Mundgefühl. Rein damit! Ins Regal. Und in die Kühlung.' +
+      ' Denn eines kann man auch immer gleich naschen.\n' +
+      '\n' +
+      'Stammwürze: 12,6 °P Alkoholgehalt: 5,3 % vol'
   },
   {
     id: 2,

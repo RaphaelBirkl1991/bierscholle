@@ -23,14 +23,14 @@ export class WarenkorbService {
     return this.items;
   }
 
-  clearWarenkorb() {
-    this.items = [];
-    return this.items;
-  }
+  // clearWarenkorb() {
+  //   this.items = [];
+  //   return this.items;
+  // }
 
   getVersandPrices(){
     return this.http.get<{type: string, price: number}[]>
-    ('/assets/shipping.json');
+    ('/assets/versand.json');
   }
 
 }

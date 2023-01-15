@@ -11,6 +11,8 @@ import { VersandComponent } from './versand/versand.component';
 import { KopfzeileComponent } from './kopfzeile/kopfzeile.component';
 import {RouterModule} from "@angular/router";
 import { ProduktAlertsComponent } from './produkt-alerts/produkt-alerts.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ProduktAlertsComponent } from './produkt-alerts/produkt-alerts.componen
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: ProduktListeComponent },
