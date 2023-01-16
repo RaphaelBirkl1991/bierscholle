@@ -6,12 +6,19 @@
 
 <div class="warenkorb-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  <span>{{ item.price | currency: 'EUR' }}</span>
 </div>
+
+
+<div>Summe: {{ total() }}</div>
+
+<br>
 
 <button type="button" (click)="kaufen()">
   kaufen
 </button>
+
+
 
 
 

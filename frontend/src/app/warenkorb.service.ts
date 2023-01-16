@@ -23,6 +23,10 @@ export class WarenkorbService {
     return this.items;
   }
 
+  addToWarenkorb1(produkt: any) {
+    this.items.push(produkt);
+  }
+
   // clearWarenkorb() {
   //   this.items = [];
   //   return this.items;

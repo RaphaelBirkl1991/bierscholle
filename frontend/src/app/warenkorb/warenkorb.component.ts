@@ -16,4 +16,12 @@ export class WarenkorbComponent {
   kaufen() {
     window.alert('Gekauft!');
   }
+
+  total() {
+    let sum = 0;
+    for (let item of this.items) {
+      sum += item.price;
+    }
+    return sum;
+  }
 }
