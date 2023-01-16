@@ -34,6 +34,15 @@ export const produkts = [
     beschreibung: 'Der Klassiker unter den Ayinger Bierspezialitäten - Goldgelbes, untergäriges Bier,\n' +
       'mit leichter malziger Note,\n' +
       'frisch, süffig und mild.'
+  },
+  {
+    id: 4,
+    name: 'Augustiner Lagerbier Hell',
+    price:1.50,
+    beschreibung: 'Ein besonders mildes, spritziges, lang gelagertes und vor allem erfrischendes Bier.' +
+      ' Einmalig in seinem Geschmack, ein Genuss für jeden Bierkenner. Gebraut in einer der ältesten Brauereien' +
+      ' Münchens weiß das Augustiner Lagerbier Hell mit einem Alkoholgehalt von 5,2 % Vol. einfach jeden zu' +
+      ' überzeugen!" so der Hersteller.'
   }
 ];
 
