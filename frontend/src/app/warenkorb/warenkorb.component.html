@@ -1,0 +1,17 @@
+<h3> Warenkorb </h3>
+
+<p>
+  <a routerLink="/versand">Versandbedingungen</a>
+</p>
+
+<div class="warenkorb-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>
+
+<button type="button" (click)="kaufen()">
+  kaufen
+</button>
+
+
+

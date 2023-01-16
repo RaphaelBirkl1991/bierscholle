@@ -1,0 +1,12 @@
+
+<h3>Versandbedingungen:</h3>
+
+
+
+
+<div class="versand-item" *ngFor="let versand of versandKosten | async">
+  <span>{{ versand.type }}</span>
+  <span>{{ versand.price | currency }}</span>
+</div>
+
+
