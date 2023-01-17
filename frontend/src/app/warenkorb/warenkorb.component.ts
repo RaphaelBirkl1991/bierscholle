@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {WarenkorbService} from "../warenkorb.service";
+import {Produkt} from "../produkts";
 
 @Component({
   selector: 'app-warenkorb',
@@ -8,6 +9,7 @@ import {WarenkorbService} from "../warenkorb.service";
 })
 export class WarenkorbComponent {
   items = this.warenkorbService.getItems();
+  // it: any;
 
   constructor(
     private warenkorbService: WarenkorbService
@@ -24,4 +26,12 @@ export class WarenkorbComponent {
     }
     return sum;
   }
+
+  // clearWarenkorb(it: any) {
+  //
+  // }
+
+  // clearWarenkorb(produkt: Produkt) {
+  //
+  // }
 }

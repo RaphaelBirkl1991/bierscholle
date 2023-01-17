@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
-import { Produkt } from './produkts';
+import {Produkt, produkts} from './produkts';
 import { Injectable } from '@angular/core';
-
 
 
 
@@ -26,6 +25,10 @@ export class WarenkorbService {
   addToWarenkorb1(produkt: any) {
     this.items.push(produkt);
   }
+
+  // clearWarenkorb(produkt: Produkt) {
+  //   this.items.splice(this.items.indexOf(produkt), 1);
+  // }
 
   // clearWarenkorb() {
   //   this.items = [];

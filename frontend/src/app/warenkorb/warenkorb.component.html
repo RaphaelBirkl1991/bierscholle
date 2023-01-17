@@ -1,13 +1,22 @@
 <h3> Warenkorb </h3>
 
 <p>
-  <a routerLink="/versand">Versandbedingungen</a>
+  <a routerLink="/versand">VersandKosten</a>
 </p>
 
 <div class="warenkorb-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency: 'EUR' }}</span>
+<!--  <button type="button" (click)="clearWarenkorb(item)">Löschen</button>-->
 </div>
+
+<!--<div *ngFor="let it of items">-->
+<!--<app-warenkorb [id]="it"></app-warenkorb>-->
+<!--<br>-->
+<!--<br>-->
+<!--<button type ="submit" class="button is-danger" (click)="clearWarenkorb(it)">Lösche Artikel</button>-->
+<!--</div>-->
+
 
 
 <div>Summe: {{ total() }}</div>
