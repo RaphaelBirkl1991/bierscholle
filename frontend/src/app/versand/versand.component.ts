@@ -8,7 +8,9 @@ import {Observable} from "rxjs";
   styleUrls: ['./versand.component.css']
 })
 export class VersandComponent  implements OnInit{
-  constructor(private warenkorbService: WarenkorbService) {}
+
+  constructor(private warenkorbService: WarenkorbService)
+  {}
   versandKosten!: Observable<{type: string, price: number}[]>;
 
   ngOnInit(): void {

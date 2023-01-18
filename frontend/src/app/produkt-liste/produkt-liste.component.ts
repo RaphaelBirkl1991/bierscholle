@@ -9,13 +9,13 @@ import {produkts} from "../produkts";
 export class ProduktListeComponent {
   produkts = produkts;
 
-  merken(){
-    window.alert('es wurde schon gemerkt!');
-  }
-  benachrichtigen(){
-    window.alert('Ich sage dir bescheid wenn es reduziert ist!');
-
-  }
+  // merken(){
+  //   window.alert('es wurde schon gemerkt!');
+  // }
+  // benachrichtigen(){
+  //   window.alert('Ich sage dir bescheid wenn es reduziert ist!');
+  //
+  // }
 
 
 }

@@ -3,8 +3,6 @@ import { Produkt } from './produkts';
 import { Injectable } from '@angular/core';
 
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,6 +13,7 @@ export class WarenkorbService {
     private http: HttpClient
   ) { }
 
+
   addToWarenkorb(produkt: Produkt) {
     this.items.push(produkt);
   }
@@ -23,10 +22,10 @@ export class WarenkorbService {
     return this.items;
   }
 
-  // clearWarenkorb() {
-  //   this.items = [];
-  //   return this.items;
-  // }
+  clearWarenkorb() {
+    this.items = [];
+    return this.items;
+  }
 
   getVersandPrices(){
     return this.http.get<{type: string, price: number}[]>
@@ -34,3 +33,4 @@ export class WarenkorbService {
   }
 
 }
+

@@ -3,6 +3,8 @@ export interface Produkt {
   name: string;
   price: number;
   beschreibung: string;
+
+
 }
 
 export const produkts = [
@@ -43,7 +45,25 @@ export const produkts = [
       ' Einmalig in seinem Geschmack, ein Genuss für jeden Bierkenner. Gebraut in einer der ältesten Brauereien' +
       ' Münchens weiß das Augustiner Lagerbier Hell mit einem Alkoholgehalt von 5,2 % Vol. einfach jeden zu' +
       ' überzeugen!" so der Hersteller.'
-  }
+  },
+  {
+    id: 5,
+    name: 'Versandkosten Normal',
+    price:5.50,
+    beschreibung: 'Besoders schneller Versand !.'
+  },
+  {
+    id: 6,
+    name: 'Versandkosten Schneller als normal',
+    price:6.50,
+    beschreibung: 'Besoders schneller Versand gibt ein Feigling dazu  !.'
+  },
+  {
+    id: 7,
+    name: 'Versandkosten Express geht brutal schnell',
+    price:7.50,
+    beschreibung: 'Express Versand für die Trinkastarken  !.'
+  },
 ];
 
 
