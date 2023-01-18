@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {WarenkorbService} from "../warenkorb.service";
-import {Produkt} from "../produkts";
+
 
 @Component({
   selector: 'app-warenkorb',
