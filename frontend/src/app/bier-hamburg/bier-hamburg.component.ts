@@ -11,49 +11,44 @@ export class BierHamburgComponent implements OnInit{
   produkts : Produkt[]= [
     {
       id: 1,
-      name: 'Giesinger Weißbier 20 x 0,5l',
-      price: 24.91 ,
-      beschreibung: 'Mittlerweile wohl eines der beliebtesten Biere Münchens. Untergärig gebraut nach dem ' +
-        'Reinheitsgebot' +
-        ' von 1516. Mit Wasser aus unserem eigenen Tiefbrunnen. Unser Flaggschiff. Schmeckt. Gut. Leuchtend goldgelb. ' +
-        'Mit kompaktem, weißem Schaum und leichter Trübung. Seine Fans freuen sich auf frisches Hopfenaroma,' +
-        ' den vollmundigen Antrunk und das geschmeidige Mundgefühl. Rein damit! Ins Regal. Und in die Kühlung.' +
-        ' Denn eines kann man auch immer gleich naschen.\n' +
-        '\n' +
-        'Stammwürze: 12,6 °P Alkoholgehalt: 5,3 % vol'
+      name: 'Astra 20 x 0,5l',
+      price: 17.10,
+      beschreibung: 'Pilsener mit 4,9% vol.\n' +
+        'Das Original, Astra Urtyp, aus dem Jahre 1909: mild, feinwürzig und einfach lecker ' +
+        'mit 4,9% Alkohol. Mit viel Liebe gebraut im Herzen Hamburgs.'
     },
     {
       id: 2,
-      name: 'Ayinger 20 x 0,5l',
-      price: 18.54,
-      beschreibung: 'Der Klassiker unter den Ayinger Bierspezialitäten - Goldgelbes, untergäriges Bier,\n' +
-        'mit leichter malziger Note,\n' +
-        'frisch, süffig und mild.'
+      name: 'Gröninger Pils 24 x 0,33',
+      price: 23.99,
+      beschreibung: 'Mit einer 225-jährigen Tradition verstehen wir von der Gröninger Privatbrauerei unser Handwerk.' +
+        ' Nach deutschem Reinheitsgebot gebraut und dem wichtigsten Grundsatz verschrieben: Nur die ' +
+        'besten Zutaten kommen ins Fass! Der Hopfen aus der berühmten Hallertau bei München, das Malz von' +
+        ' einer exklusiven Spezialmälzerei aus Bamberg, das frische Wasser aus der Lüneburger Heide'
     },
     {
       id: 3,
-      name: 'Augustiner Lagerbier Hell 20 x 0,5l',
-      price: 21.49,
-      beschreibung: 'Ein besonders mildes, spritziges, lang gelagertes und vor allem erfrischendes Bier.' +
-        ' Einmalig in seinem Geschmack, ein Genuss für jeden Bierkenner. Gebraut in einer der ältesten Brauereien' +
-        ' Münchens weiß das Augustiner Lagerbier Hell mit einem Alkoholgehalt von 5,2 % Vol. einfach jeden zu' +
-        ' überzeugen!" so der Hersteller.'
+      name: 'Holsten Pilsener 20 x 0,5l',
+      price: 16.99,
+      beschreibung: 'Das Holsten Pilsener wird untergärig gebraut und hat einen Alkoholgehalt von 4,8%. Als ' +
+        'Zutaten werden Wasser, Gerstenmalz und Hopfen verwendet.Im Glas zeigt sich das Holsten Pilsener ' +
+        'kristallklar, goldgelb. Lebendig sprudelt die Kohlensäure und dadurch wirkt das Pils sehr erfrischend.'
     },
     {
       id: 4,
-      name: 'Versandkosten Normal',
-      price:5.50,
-      beschreibung: 'Besoders schneller Versand !.'
-    },
-    {
-      id: 5,
       name: 'Versandkosten Schnell',
       price:5.50,
       beschreibung: 'Besoders schneller Versand !.'
     },
     {
-      id: 6,
+      id: 5,
       name: 'Versandkosten Normal',
+      price:5.50,
+      beschreibung: 'Normaler Versand !.'
+    },
+    {
+      id: 6,
+      name: 'Versandkosten Express',
       price:5.50,
       beschreibung: 'Express Versand !.'
     },

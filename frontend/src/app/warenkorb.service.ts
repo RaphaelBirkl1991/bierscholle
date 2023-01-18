@@ -10,13 +10,16 @@ import { Injectable } from '@angular/core';
 export class WarenkorbService {
   items: Produkt[] = [];
 
+
   constructor(
     private http: HttpClient
   ) { }
 
   addToWarenkorb(produkt: Produkt) {
     this.items.push(produkt);
+
   }
+
 
 
   getItems() {

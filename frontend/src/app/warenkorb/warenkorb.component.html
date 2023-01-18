@@ -1,8 +1,16 @@
-<h3> Warenkorb </h3>
+<p>
+  <a routerLink="/bierbayern">Zurück zum Bayrischen Bier</a>
+</p>
 
 <p>
-  <a routerLink="/versand">VersandKosten</a>
+  <a routerLink="/bierhamburg">Zurück zum Hamburger Bier</a>
 </p>
+
+<h3> Warenkorb </h3>
+
+<!--<p>-->
+<!--  <a routerLink="/versand">VersandKosten</a>-->
+<!--</p>-->
 
 <div class="warenkorb-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
