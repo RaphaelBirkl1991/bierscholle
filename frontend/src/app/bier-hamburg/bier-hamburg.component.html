@@ -1,1 +1,16 @@
-<p>bier-hamburg works!</p>
+<h2>Biersorten:</h2>
+
+<div *ngFor="let produkt of produkts">
+
+  <h3>
+    <a [title]="produkt.name + ' details' "
+       [routerLink]="['/produkts', produkt.id]">
+      {{ produkt.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="produkt.beschreibung">
+    Beschreibung: {{ produkt.beschreibung}}
+  </p>
+
+  <router-outlet></router-outlet>

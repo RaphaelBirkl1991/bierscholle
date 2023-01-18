@@ -45,6 +45,9 @@ import { BierHamburgComponent } from './bier-hamburg/bier-hamburg.component';
             {path: 'warenkorb', component: WarenkorbComponent},
             {path: 'versand', component: VersandComponent},
             {path: 'services', component: ServicesComponent},
+            {path: 'home', component: HomeComponent},
+            {path: 'login', component: LogInComponent},
+          {path: 'bierbayern', component: BierBayernComponent},
         ]),
         FormsModule
     ],

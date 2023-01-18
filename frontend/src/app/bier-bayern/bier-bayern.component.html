@@ -1,4 +1,4 @@
-<h2>Biersorten:</h2>
+<h2>Bayerische Bier:</h2>
 
 <div *ngFor="let produkt of produkts">
 
@@ -12,6 +12,8 @@
   <p *ngIf="produkt.beschreibung">
     Beschreibung: {{ produkt.beschreibung}}
   </p>
+
+  <router-outlet></router-outlet>
 
 
 
