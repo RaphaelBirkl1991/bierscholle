@@ -27,9 +27,14 @@ export class WarenkorbComponent {
     return sum;
   }
 
-  // clearWarenkorb(it: any) {
-  //
-  // }
+
+  remove(id: number) {
+    // this.items = this.items.filter(items => items.id !== id);
+    // this.items.splice(this.items.indexOf(id), 1 );
+      this.items = this.items.splice(1,7);
+  }
+
+
 
   // clearWarenkorb(produkt: Produkt) {
   //
