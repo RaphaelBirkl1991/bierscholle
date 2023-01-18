@@ -14,6 +14,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { LogInComponent } from './log-in/log-in.component';
 import { RegistrierenComponent } from './registrieren/registrieren.component';
 import { ServicesComponent } from './services/services.component';
+import { HomeComponent } from './home/home.component';
+import { BierBayernComponent } from './bier-bayern/bier-bayern.component';
+import { BierHamburgComponent } from './bier-hamburg/bier-hamburg.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { ServicesComponent } from './services/services.component';
     ProduktAlertsComponent,
     LogInComponent,
     RegistrierenComponent,
-    ServicesComponent
+    ServicesComponent,
+    HomeComponent,
+    BierBayernComponent,
+    BierHamburgComponent,
+    ShopComponent,
   ],
     imports: [
         BrowserModule,
@@ -39,6 +47,8 @@ import { ServicesComponent } from './services/services.component';
             {path: 'warenkorb', component: WarenkorbComponent},
             {path: 'versand', component: VersandComponent},
             {path: 'services', component: ServicesComponent},
+            {path: 'home', component: HomeComponent},
+            {path: 'login', component: LogInComponent},
         ]),
         FormsModule
     ],

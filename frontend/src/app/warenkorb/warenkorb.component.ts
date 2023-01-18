@@ -12,6 +12,7 @@ export class WarenkorbComponent {
   items = this.warenkorbService.getItems();
 
 
+
   constructor(
     private warenkorbService: WarenkorbService
 
@@ -38,5 +39,13 @@ export class WarenkorbComponent {
     }
     return sum;
   }
+
+  // remove(id:number) {
+  //   this.items = this.items.filter(items => items.id !== id);
+  // }
+  remove() {
+    this.items = this.items.splice(1,7);
+  }
+
 }
 

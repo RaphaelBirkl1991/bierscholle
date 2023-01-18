@@ -18,6 +18,7 @@ export class WarenkorbService {
     this.items.push(produkt);
   }
 
+
   getItems() {
     return this.items;
   }
