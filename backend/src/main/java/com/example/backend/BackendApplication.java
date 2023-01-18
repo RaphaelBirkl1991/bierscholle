@@ -1,6 +1,11 @@
 package com.example.backend;
 
 
+import com.example.backend.entity.Kunde;
+import com.example.backend.entity.Produkt;
+import com.example.backend.repository.KundenRepository;
+import com.example.backend.repository.ProduktRepository;
+import com.example.backend.repository.WarenkorbRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

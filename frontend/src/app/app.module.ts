@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { LogInComponent } from './log-in/log-in.component';
 import { RegistrierenComponent } from './registrieren/registrieren.component';
 import { ServicesComponent } from './services/services.component';
+import { ProduktComponent } from './produkt/produkt.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ServicesComponent } from './services/services.component';
     ProduktAlertsComponent,
     LogInComponent,
     RegistrierenComponent,
-    ServicesComponent
+    ServicesComponent,
+    ProduktComponent
   ],
     imports: [
         BrowserModule,
@@ -39,6 +41,7 @@ import { ServicesComponent } from './services/services.component';
             {path: 'warenkorb', component: WarenkorbComponent},
             {path: 'versand', component: VersandComponent},
             {path: 'services', component: ServicesComponent},
+            {path: 'produkt_sortiment', component: ProduktComponent},
         ]),
         FormsModule
     ],

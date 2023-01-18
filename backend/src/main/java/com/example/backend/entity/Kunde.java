@@ -1,6 +1,7 @@
-package com.example.backend;
+package com.example.backend.entity;
 
 import jakarta.persistence.*;
+
 
 @Entity
 @Table(name= "Kundenverzeichnis")
