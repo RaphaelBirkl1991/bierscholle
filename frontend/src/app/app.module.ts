@@ -17,6 +17,7 @@ import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
 import { BierBayernComponent } from './bier-bayern/bier-bayern.component';
 import { BierHamburgComponent } from './bier-hamburg/bier-hamburg.component';
+import { KundenListeComponent } from './kunden-liste/kunden-liste.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BierHamburgComponent } from './bier-hamburg/bier-hamburg.component';
     ServicesComponent,
     HomeComponent,
     BierBayernComponent,
-    BierHamburgComponent
+    BierHamburgComponent,
+    KundenListeComponent
   ],
     imports: [
         BrowserModule,
@@ -51,6 +53,8 @@ import { BierHamburgComponent } from './bier-hamburg/bier-hamburg.component';
           {path: 'bierhamburg', component: BierHamburgComponent},
           {path: 'kopfzeile', component: KopfzeileComponent},
           {path: 'produktbeschreibung', component: ProduktBeschreibungComponent},
+          {path: 'produktliste', component: ProduktListeComponent},
+          {path: 'kundenliste', component: KundenListeComponent},
         ]),
         FormsModule
     ],

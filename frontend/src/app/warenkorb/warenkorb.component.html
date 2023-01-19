@@ -13,8 +13,8 @@
 <!--</p>-->
 
 <div class="warenkorb-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency: 'EUR' }}</span>
+  <span>{{ item.bezeichnung }}</span>
+  <span>{{ item.preis | currency: 'EUR' }}</span>
   <button type="button" (click)="remove(1)">
     löschen
   </button>

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import {produkts} from "../produkts";
+import {Produkt} from "../produkt";
+import {HttpClient} from "@angular/common/http";
+
+
 
 @Component({
   selector: 'app-produkt-liste',
@@ -7,7 +10,14 @@ import {produkts} from "../produkts";
   styleUrls: ['./produkt-liste.component.css']
 })
 export class ProduktListeComponent {
-  produkts = produkts;
+  produkts : Produkt[] = [];
+  produkt: Produkt = {bezeichnung: '', preis: 0, beschreibung: '', id: 0};
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<Produkt[]>('/api/produkt_sortiment').subscribe(p => this.produkts = p);
+  }
 
 
 

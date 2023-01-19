@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {WarenkorbService} from "../warenkorb.service";
+import {WarenkorbService} from "./warenkorb.service";
 
 
 @Component({
@@ -22,7 +22,7 @@ export class WarenkorbComponent {
   total() {
     let sum = 0;
     for (let item of this.items) {
-      sum += item.price;
+      sum += item.preis;
     }
     return sum;
   }

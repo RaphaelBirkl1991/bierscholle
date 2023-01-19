@@ -2,14 +2,14 @@
   <a routerLink="/home">Zurück</a>
 </p>
 
-<h2>Bayerische Bier:</h2>
+<h2>Biermarken Bayern:</h2>
 
 <div *ngFor="let produkt of produkts">
 
   <h3>
-    <a [title]="produkt.name + ' details' "
+    <a [title]="produkt.bezeichnung + ' details' "
        [routerLink]="['/produkts', produkt.id]">
-      {{ produkt.name }}
+      {{ produkt.bezeichnung }}
     </a>
   </h3>
 
