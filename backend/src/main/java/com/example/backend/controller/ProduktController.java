@@ -30,7 +30,7 @@ public class ProduktController {
 
 
     @GetMapping("api/produkt_sortiment")
-    public List<Produkt> showProduktDTO() {
+    public List<Produkt> showProduktSortiment() {
     // return produktliste;
         return produktRepository.findAll();
     }

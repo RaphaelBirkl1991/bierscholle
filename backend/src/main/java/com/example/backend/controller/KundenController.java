@@ -19,7 +19,7 @@ public class KundenController {
     }
 
     @GetMapping("api/kunden_liste")
-    public List<Kunde> showKunde() {
+    public List<Kunde> showKundenliste() {
         return kundenRepository.findAll();
     }
 
