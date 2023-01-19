@@ -6,8 +6,8 @@
 <h2>Produktbeschreibung:</h2>
 
 <div *ngIf="produkt">
-  <h3>{{ produkt.name }}</h3>
-  <h4>{{produkt.price | currency: 'EUR' }}</h4>
+  <h3>{{ produkt.bezeichnung }}</h3>
+  <h4>{{produkt.preis | currency: 'EUR' }}</h4>
   <p>{{ produkt.beschreibung }}</p>
   <button type="button" (click)="addToWarenkorb(produkt)">Kaufen</button>
 </div>

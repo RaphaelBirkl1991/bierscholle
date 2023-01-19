@@ -13,7 +13,7 @@ export class ProduktBeschreibungComponent implements OnInit{
     this.warenkorbService.addToWarenkorb(produkt);
     window.alert('Dein Produkt ist im Warenkorb');
   }
-  produkt: { price: number; name: string; id: number; beschreibung: string }  | undefined;
+  produkt: { preis: number; bezeichnung: string; id: number; beschreibung: string }  | undefined;
 
   constructor(
     private route: ActivatedRoute,
