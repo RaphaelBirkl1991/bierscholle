@@ -13,40 +13,27 @@ import java.util.List;
 @RestController
 public class ProduktController {
 
-    // private final ProduktRepository produktRepository;
+     private final ProduktRepository produktRepository;
 
-//    public List<ProduktDTO> prouktliste = List.of(
+    @Autowired
+    public ProduktController(ProduktRepository produktRepository ) {
+        this.produktRepository = produktRepository;
+    }
+
+    // Liste mit verschiedenen Produkten
+
+//     public List<ProduktDTO> produktliste = List.of(
 //            new ProduktDTO("Benedictus", 23.00, "Das Original aus dem Kloster Scheyern"),
 //            new ProduktDTO("Chiemseer", 22.00, "Immer eine gute Wahl"),
 //            new ProduktDTO("Altmühltaler Hell", 24.00, "Das besondere Bier für die echten Kenner")
 //    );
 
-  //  public ProduktDTO = new ProduktDTO ("Benedictus", 2.15, "Das Original aus dem Kloster Scheyern");
-
-    ProduktDTO produktDTO = new ProduktDTO("Benediktus", 2.10, "Das original aus Scheyern");
 
     @GetMapping("api/produkt_sortiment")
-    public ProduktDTO showProduktDTO() {
-     //   produktDTO = new ProduktDTO("Benediktus", 2.10, "Das original aus Scheyern");
-        return produktDTO;
+    public List<Produkt> showProduktDTO() {
+    // return produktliste;
+        return produktRepository.findAll();
     }
-
-
-
-
-    // Eigene Versuche die Daten aus der Datenbank zu holen
-
-//    @Autowired
-//    public ProduktController(ProduktRepository produktRepository ) {
-//        this.produktRepository = produktRepository;
-//    }
-
-//    @GetMapping("/")
-//    public List<Produkt> getAll(){
-//        return produktRepository.findAll();
-//    }
-
-
 
 
 }
