@@ -38,19 +38,19 @@ export const produkts = [
   },
   {
     id: 4,
-    name: 'Versandkosten Normal',
-    price:5.50,
-    beschreibung: 'Besoders schneller Versand !.'
-  },
-  {
-    id: 5,
     name: 'Versandkosten Schnell',
     price:5.50,
     beschreibung: 'Besoders schneller Versand !.'
   },
   {
-    id: 6,
+    id: 5,
     name: 'Versandkosten Normal',
+    price:5.50,
+    beschreibung: 'Besoders normaler Versand !.'
+  },
+  {
+    id: 6,
+    name: 'Versandkosten Express',
     price:5.50,
     beschreibung: 'Express Versand !.'
   },
