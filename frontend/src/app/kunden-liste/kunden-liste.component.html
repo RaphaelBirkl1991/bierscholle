@@ -1,0 +1,14 @@
+<h1>Kunden Liste:</h1>
+
+<br><br>
+
+<div *ngFor="let kunde of kunden">
+  <h2><br>{{kunde.vorname + " " + kunde.nachname + " " + kunde.strasse + " " + kunde.hausnummer + " " + kunde.plz + " " +
+    kunde.ort + " " + kunde.email}} <br><hr> </h2>
+</div>
+
+  <br><br>
+
+  <a routerLink="/produktliste"><button>Bier Liste</button></a>
+<router-outlet></router-outlet>
+

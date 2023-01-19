@@ -10,6 +10,9 @@ import { KopfzeileComponent } from './kopfzeile/kopfzeile.component';
 import { WarenkorbComponent } from './warenkorb/warenkorb.component';
 import { KundenListeComponent } from './kunden-liste/kunden-liste.component';
 import { HauptseiteComponent } from './hauptseite/hauptseite.component';
+import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-beschreibung.component';
+import { ServicesComponent } from './services/services.component';
+import {LogInComponent} from "./log-in/log-in.component";
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { HauptseiteComponent } from './hauptseite/hauptseite.component';
     WarenkorbComponent,
     KundenListeComponent,
     HauptseiteComponent,
+    ProduktBeschreibungComponent,
+    ServicesComponent,
+    LogInComponent,
 
   ],
     imports: [
