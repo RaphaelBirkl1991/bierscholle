@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
-import {Produkt, produkts} from './produkts';
 import { Injectable } from '@angular/core';
+import {Produkt} from "../produkt";
 
 
 

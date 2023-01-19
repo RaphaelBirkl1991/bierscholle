@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {WarenkorbService} from "../warenkorb.service";
-import {Produkt, produkts} from "../produkts";
+import {WarenkorbService} from "../warenkorb/warenkorb.service";
+import {Produkt} from "../produkt";
+
 
 @Component({
   selector: 'app-produkt-beschreibung',
@@ -23,7 +24,7 @@ export class ProduktBeschreibungComponent implements OnInit{
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const produktIdFromRoute= Number(routeParams.get('produktId'));
-    this.produkt =produkts.find(produkt => produkt.id === produktIdFromRoute);
+    // this.produkt =produkts.find(produkt => produkt.id === produktIdFromRoute);
   }
 
 }

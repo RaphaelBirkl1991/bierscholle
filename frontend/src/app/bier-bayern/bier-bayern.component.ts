@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Produkt} from "../produkts";
+import {Produkt} from "../produkt";
+
 
 @Component({
   selector: 'app-bier-bayern',

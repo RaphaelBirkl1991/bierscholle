@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {WarenkorbService} from "../warenkorb.service";
+import {WarenkorbService} from "./warenkorb.service";
 
 
 @Component({
