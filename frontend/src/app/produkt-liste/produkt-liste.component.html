@@ -1,0 +1,33 @@
+<h2>Biersorten:</h2>
+
+<div *ngFor="let produkt of produkte">
+
+  <h3>
+    <a [title]="produkt.bezeichnung + ' details' "
+       [routerLink]="['api/produkt_sortiment', produkt.id]">
+      {{ produkt.bezeichnung }}
+    </a>
+  </h3>
+
+<!--  <p *ngIf="produkt.beschreibung">-->
+<!--    Beschreibung: {{ produkt.beschreibung}}-->
+<!--  </p>-->
+</div>
+
+
+
+<!--<ul class="biere">-->
+<!--  <li *ngFor="let produkt of produkte">-->
+<!--    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">-->
+<!--      <span class="badge">{{hero.id}}</span>-->
+<!--      <span class="name">{{hero.name}}</span>-->
+<!--    </button>-->
+<!--  </li>-->
+<!--</ul>-->
+
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+
+
+
+
+

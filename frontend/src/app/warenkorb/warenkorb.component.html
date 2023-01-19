@@ -1,0 +1,23 @@
+<h3> Warenkorb </h3>
+
+<!--<p>-->
+<!--  <a routerLink="/versand">VersandKosten</a>-->
+<!--</p>-->
+
+<div class="warenkorb-item" *ngFor="let item of items">
+  <span>{{ item.bezeichnung }}</span>
+  <span>{{ item.preis | currency: 'EUR' }}</span>
+  <button type="button" (click)="remove(1)">
+    löschen
+  </button>
+</div>
+
+
+<div>Summe: {{ total() }}</div>
+
+<br>
+
+<button type="button" (click)="kaufen()">
+  kaufen
+</button>
+
