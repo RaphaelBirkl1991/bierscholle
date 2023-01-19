@@ -1,8 +1,11 @@
 package com.example.backend.DTO;
 
 
+import lombok.Getter;
+import lombok.Setter;
 
-
+@Getter
+@Setter
 public class ProduktDTO {
 
     public String bezeichnung;
@@ -19,27 +22,4 @@ public class ProduktDTO {
     }
 
 
-    public String getBezeichnung() {
-        return bezeichnung;
-    }
-
-    public void setBezeichnung(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
-    }
-
-    public double getPreis() {
-        return preis;
-    }
-
-    public void setPreis(double preis) {
-        this.preis = preis;
-    }
-
-    public String getBeschreibung() {
-        return beschreibung;
-    }
-
-    public void setBeschreibung(String beschreibung) {
-        this.beschreibung = beschreibung;
-    }
 }
