@@ -1,1 +1,25 @@
-<p>registrieren works!</p>
+<h2>Registrieren</h2>
+
+<form (submit)="save()">
+  <input name="vorname" type="text" [(ngModel)]="neuerKunde.vorname" placeholder="Vorname">
+  <input name="nachname" type="text" [(ngModel)]="neuerKunde.nachname" placeholder="Nachname"><br>
+  <input name="strasse" type="text" [(ngModel)]="neuerKunde.strasse" placeholder="Strasse">
+  <input name="hausnummer" type="text" [(ngModel)]="neuerKunde.hausnummer" placeholder="Hausnummer"><br>
+  <input name="plz" type="text" [(ngModel)]="neuerKunde.plz" placeholder="PLZ">
+  <input name="ort" type="text" [(ngModel)]="neuerKunde.ort" placeholder="Ort"><br>
+  <input name="email" type="text" [(ngModel)]="neuerKunde.email" placeholder="E-mail"><br>
+  <input name="passwort" type="text" [(ngModel)]="neuerKunde.passwort" placeholder="Passwort"><br>
+<!--  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">-->
+  <br>
+  <button type="submit">Registrieren</button>
+</form>
+
+
+
+
+
+
+
+
+
+
