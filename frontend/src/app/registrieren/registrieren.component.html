@@ -1,3 +1,4 @@
+<a routerLink="/produkt_liste">zurück zu der Bierauswahl :)</a>
 <h2>Registrieren</h2>
 
 <form (submit)="save()">
@@ -11,8 +12,11 @@
   <input name="passwort" type="text" [(ngModel)]="neuerKunde.passwort" placeholder="Passwort"><br>
 <!--  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">-->
   <br>
-  <button type="submit">Registrieren</button>
+  <a routerLink="/willkommen"><button type="submit">Registrieren</button></a>
+
 </form>
+
+<router-outlet></router-outlet>
 
 
 
