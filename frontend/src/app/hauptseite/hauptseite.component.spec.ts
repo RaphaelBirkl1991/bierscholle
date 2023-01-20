@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VersandComponent } from './versand.component';
+import { HauptseiteComponent } from './hauptseite.component';
 
-describe('VersandComponent', () => {
-  let component: VersandComponent;
-  let fixture: ComponentFixture<VersandComponent>;
+describe('HauptseiteComponent', () => {
+  let component: HauptseiteComponent;
+  let fixture: ComponentFixture<HauptseiteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VersandComponent ]
+      declarations: [ HauptseiteComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VersandComponent);
+    fixture = TestBed.createComponent(HauptseiteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

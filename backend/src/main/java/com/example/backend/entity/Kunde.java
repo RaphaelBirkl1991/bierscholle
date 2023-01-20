@@ -1,8 +1,10 @@
 package com.example.backend.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
-
+@Getter
+@Setter
 @Entity
 @Table(name= "Kundenverzeichnis")
 public class Kunde {
@@ -19,73 +21,20 @@ public class Kunde {
     private String ort;
     @Column(unique = true)
     private String email;
+    private String passwort;
+
+
+    public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email, String passwort) {
+        this.vorname = vorname;
+        this.nachname = nachname;
+        this.strasse = strasse;
+        this.hausnummer = hausnummer;
+        this.plz = plz;
+        this.ort = ort;
+        this.email = email;
+        this.passwort = passwort;
+    }
 
     public Kunde() {
-    }
-
-    public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email) {
-        this.vorname = vorname;
-        this.nachname = nachname;
-        this.strasse = strasse;
-        this.hausnummer = hausnummer;
-        this.plz = plz;
-        this.ort = ort;
-        this.email = email;
-    }
-
-    public String getVorname() {
-        return vorname;
-    }
-
-    public void setVorname(String vorname) {
-        this.vorname = vorname;
-    }
-
-    public String getNachname() {
-        return nachname;
-    }
-
-    public void setNachname(String nachname) {
-        this.nachname = nachname;
-    }
-
-    public String getStrasse() {
-        return strasse;
-    }
-
-    public void setStrasse(String strasse) {
-        this.strasse = strasse;
-    }
-
-    public int getHausnummer() {
-        return hausnummer;
-    }
-
-    public void setHausnummer(int hausnummer) {
-        this.hausnummer = hausnummer;
-    }
-
-    public int getPlz() {
-        return plz;
-    }
-
-    public void setPlz(int plz) {
-        this.plz = plz;
-    }
-
-    public String getOrt() {
-        return ort;
-    }
-
-    public void setOrt(String ort) {
-        this.ort = ort;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
