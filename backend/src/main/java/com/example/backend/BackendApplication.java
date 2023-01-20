@@ -42,7 +42,7 @@ public class BackendApplication {
 
             // Dummy Produktobjekte
             Produkt produkt1 = new Produkt("Augustiner Hell", 2.09, "Munich Kindl´s choice" );
-            Produkt produkt2 = new Produkt("Mergekonflikt", 3.25, "Das selbstgebraute Craft Bier für Programmierer");
+            Produkt produkt2 = new Produkt("Astra", 3.25, "Das selbstgebraute Craft");
             Produkt produkt3 = new Produkt("Hamburger Plörri", 0.99, "Straight outta Altster");
 
             produktRepository.save(produkt1);

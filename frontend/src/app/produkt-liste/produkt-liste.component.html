@@ -27,7 +27,77 @@
 
 <!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
 
+<div *ngFor="let produkt of produkte" style="display:inline-flex; margin-right: 50px; border: 1px solid black; ">
+<div class="col">
+  <div class="card shadow-sm">
+    <img  class="bd-placeholder-img card-img-top" width="150px" src="https://cdn02.plentymarkets.com/99cbvkn2wswt/item/images/1241/full/Ratsherrn-Pilsener-0-33-l-Bierflasche-kaufen.jpg">
+
+    <div class="card-body">
+      <p class="card-text">
+        {{ produkt.preis }}
+        <br>
+        {{ produkt.beschreibung }}
+        <br>
+        {{ produkt.bezeichnung }}
+
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-secondary">In die Biertasche</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Bier-Details</button>
+        </div>
+        <small class="text-muted">Inhalt 0.33L</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 
+<div *ngFor="let produkt of produkte" style="display:inline-flex; margin-right: 50px; border: 1px solid black; ">
+  <div class="col">
+    <div class="card shadow-sm">
+      <img  class="bd-placeholder-img card-img-top" width="150px" src="https://cdn02.plentymarkets.com/99cbvkn2wswt/item/images/1241/full/Ratsherrn-Pilsener-0-33-l-Bierflasche-kaufen.jpg">
+
+      <div class="card-body">
+        <p class="card-text">
+          {{ produkt.preis }}
+          <br>
+          {{ produkt.beschreibung }}
+          <br>
+          {{ produkt.bezeichnung }}
+
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">In die Biertasche</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Bier-Details</button>
+          </div>
+          <small class="text-muted">Inhalt 0.33L</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
+<!--<div class="col">-->
+<!--  <div class="card shadow-sm">-->
+<!--    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"-->
+<!--         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"-->
+<!--         focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%"-->
+<!--          fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+<!--    <div class="card-body">-->
+<!--      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--      <div class="d-flex justify-content-between align-items-center">-->
+<!--        <div class="btn-group">-->
+<!--          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
+<!--          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
+<!--        </div>-->
+<!--        <small class="text-muted">9 mins</small>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
