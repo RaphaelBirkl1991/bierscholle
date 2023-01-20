@@ -30,14 +30,7 @@ export class WarenkorbService {
     this.items.push(produkt);
   }
 
-  // clearWarenkorb(produkt: Produkt) {
-  //   this.items.splice(this.items.indexOf(produkt), 1);
-  // }
 
-  // clearWarenkorb() {
-  //   this.items = [];
-  //   return this.items;
-  // }
 
   getVersandPrices(){
     return this.http.get<{type: string, price: number}[]>

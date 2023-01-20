@@ -9,7 +9,6 @@ import {WarenkorbService} from "./warenkorb.service";
 })
 export class WarenkorbComponent {
   items = this.warenkorbService.getItems();
-  // it: any;
 
   constructor(
     private warenkorbService: WarenkorbService
@@ -36,7 +35,5 @@ export class WarenkorbComponent {
 
 
 
-  // clearWarenkorb(produkt: Produkt) {
-  //
-  // }
+
 }
