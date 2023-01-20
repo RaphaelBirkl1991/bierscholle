@@ -1,1 +1,42 @@
-<p>registrieren works!</p>
+<h2>Registrieren</h2>
+
+<form (submit)="register()" method="post">
+  <input id="vorname" type="text" [(ngModel)]="vorname" placeholder="Vorname">
+  <input id="nachname" type="text" [(ngModel)]="nachname" placeholder="Nachname"><br>
+  <input id="strasse" type="text" [(ngModel)]="strasse" placeholder="Strasse">
+  <input id="hausnummer" type="text" [(ngModel)]="hausnummer" placeholder="Hausnummer"><br>
+  <input id="plz" type="text" [(ngModel)]="plz" placeholder="PLZ">
+  <input id="ort" type="text" [(ngModel)]="ort" placeholder="Ort"><br>
+  <input id="email" type="text" [(ngModel)]="email" placeholder="E-mail"><br>
+  <input id="passwort" type="text" [(ngModel)]="passwort" placeholder="Passwort"><br>
+  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">
+  <br>
+  <button type="submit">Registrieren</button>
+</form>
+
+
+<!--  <label>-->
+<!--    Email:-->
+<!--    <input type="text" [(ngModel)]="email" name="email">-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <label>-->
+<!--    Password:-->
+<!--    <input type="text" [(ngModel)]="passwort" name="passwort">-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <label>-->
+<!--    Confirm Password:-->
+<!--    <input type="text" [(ngModel)]="passwortBest" name="passwortBest">-->
+<!--  </label>-->
+
+
+
+
+
+
+
+
+
+
+
