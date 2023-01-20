@@ -32,9 +32,9 @@ public class BackendApplication {
         return args -> {
 
             // Dummy Kundenobjekte
-            Kunde kunde1 = new Kunde("Anton", "Horvat", "An der Mellibar", 12, 86598,"Wien", "blackbelts-austia-ev@gmail.com");
-            Kunde kunde2 = new Kunde("Ochsensepp", "Josef", "Dorfplatz", 2, 98756, "Einöd", "rural-legend@gmx.to");
-            Kunde kunde3 = new Kunde("Polizeiinspektion 14", "PHK Maier", "Sendlingerstraße", 27, 80335, "München", "landesbeschaffungsamt@bundeslandbayern.de");
+            Kunde kunde1 = new Kunde("Anton", "Horvat", "An der Mellibar", 12, 86598,"Wien", "blackbelts-austia-ev@gmail.com", "pass123");
+            Kunde kunde2 = new Kunde("Ochsensepp", "Josef", "Dorfplatz", 2, 98756, "Einöd", "rural-legend@gmx.to", "pass123");
+            Kunde kunde3 = new Kunde("Polizeiinspektion 14", "PHK Maier", "Sendlingerstraße", 27, 80335, "München", "landesbeschaffungsamt@bundeslandbayern.de", "pass123");
 
             kundenRepository.save(kunde1);
             kundenRepository.save(kunde2);
