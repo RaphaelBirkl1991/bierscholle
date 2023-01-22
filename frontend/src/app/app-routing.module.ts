@@ -9,6 +9,7 @@ import {ProduktBeschreibungComponent} from "./produkt-beschreibung/produkt-besch
 import {LogInComponent} from "./log-in/log-in.component";
 import {RegistrierenComponent} from "./registrieren/registrieren.component";
 import {WillkommenComponent} from "./willkommen/willkommen.component";
+import {SchlussseiteComponent} from "./schlussseite/schlussseite.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
   {path: 'log_in', component: LogInComponent},
   {path: 'registrieren', component: RegistrierenComponent},
-  {path: 'willkommen', component: WillkommenComponent}
+  {path: 'willkommen', component: WillkommenComponent},
+  {path: 'schlussseite', component: SchlussseiteComponent},
+  {path: 'kopfzeile', component:KopfzeileComponent}
 
 ];
 

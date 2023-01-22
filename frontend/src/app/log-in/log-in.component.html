@@ -1,3 +1,10 @@
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+
+<div>
 <h2>Log in</h2>
 <form (submit)="login()">
   <label>
@@ -11,9 +18,13 @@
   </label>
   <br>
 
-  <p>
-    <a routerLink="/home"><button>Login</button></a>
-  </p>
+  <a routerLink="/produkt_liste"><button>Log In</button></a>
+
+<!--  <p>-->
+<!--    <a routerLink="/home"><button>Login</button></a>-->
+<!--  </p>-->
 </form>
+</div>
+
 <router-outlet></router-outlet>
 

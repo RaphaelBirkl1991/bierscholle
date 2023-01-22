@@ -15,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 import {LogInComponent} from "./log-in/log-in.component";
 import { RegistrierenComponent } from './registrieren/registrieren.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
+import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WillkommenComponent } from './willkommen/willkommen.component';
     LogInComponent,
     RegistrierenComponent,
     WillkommenComponent,
+    SchlussseiteComponent,
 
   ],
     imports: [
