@@ -11,13 +11,23 @@
   <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br>
     <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>
   </div>
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <div *ngIf="gewPodukt">
-  <h2>{{gewPodukt.bezeichnung | uppercase}} Details</h2>
-  <h4>{{gewPodukt.beschreibung}}</h4>
-  <h4>{{gewPodukt.preis}}</h4>
+  <h3>{{gewPodukt.bezeichnung | uppercase}}</h3><br>
+  <br><strong>Preis:</strong> {{gewPodukt.preis}}<br>
+  <br><strong>Alkoholgehalt:</strong> {{gewPodukt.alkoholgehalt | number}} ‰<br>
+  <br><strong>Brautyp:</strong> {{gewPodukt.brautyp}}<br>
+  <br><strong>Füllmenge:</strong> {{gewPodukt.fuellmenge}}<br>
+  <br><strong>Geschmack:</strong> {{gewPodukt.geschmack}}<br>
+  <br><strong>Bittere:</strong> {{gewPodukt.bittere}}<br>
+  <br><strong>Anlass:</strong> {{gewPodukt.anlass}}<br>
+  <br><strong>Zutaten:</strong> {{gewPodukt.zutaten}}<br>
+  <br><strong>Beschreibung:</strong> {{gewPodukt.beschreibung}}<br>
+
 
   <div>
     {{produkt.bezeichnung}}<br>{{produkt.beschreibung}}<br>{{produkt.preis}}
