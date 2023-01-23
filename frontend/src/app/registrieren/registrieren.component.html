@@ -1,5 +1,11 @@
-<a routerLink="/produkt_liste">zurück zu der Bierauswahl :)</a>
-<h2>Registrieren</h2>
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+<br>
+<a routerLink="/produkt_liste"><em>zurück zu der Bierauswahl :)</em></a>
+<strong><h2>Registrieren</h2></strong>
 
 <form (submit)="save()">
   <input name="vorname" type="text" [(ngModel)]="neuerKunde.vorname" placeholder="Vorname">
@@ -10,20 +16,11 @@
   <input name="ort" type="text" [(ngModel)]="neuerKunde.ort" placeholder="Ort"><br>
   <input name="email" type="text" [(ngModel)]="neuerKunde.email" placeholder="E-mail"><br>
   <input name="passwort" type="text" [(ngModel)]="neuerKunde.passwort" placeholder="Passwort"><br>
-<!--  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">-->
+  <!--  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">-->
   <br>
   <a routerLink="/willkommen"><button type="submit">Registrieren</button></a>
 
 </form>
 
 <router-outlet></router-outlet>
-
-
-
-
-
-
-
-
-
 

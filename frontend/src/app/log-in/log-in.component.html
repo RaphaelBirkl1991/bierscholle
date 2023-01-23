@@ -1,19 +1,32 @@
-<h2>Log in</h2>
-<form (submit)="login()">
-  <label>
-    Email:
-    <input type="email" [(ngModel)]="email" name="email">
-  </label>
-  <br>
-  <label>
-    Password:
-    <input type="password" [(ngModel)]="password" name="password">
-  </label>
-  <br>
 
-  <p>
-    <a routerLink="/home"><button>Login</button></a>
-  </p>
-</form>
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+<div>
+  <h2>Log in</h2>
+  <form (submit)="login()">
+    <label>
+      Email:
+      <input type="email" [(ngModel)]="email" name="email">
+    </label>
+    <br>
+    <label>
+      Password:
+      <input type="password" [(ngModel)]="password" name="password">
+    </label>
+    <br>
+
+    <a routerLink="/produkt_liste"><button>Log In</button></a>
+    <!--  <p>-->
+    <!--    <a routerLink="/home"><button>Login</button></a>-->
+    <!--  </p>-->
+  </form>
+
+</div>
+
 <router-outlet></router-outlet>
+
+
 

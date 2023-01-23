@@ -19,7 +19,9 @@ const routes: Routes = [
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
   {path: 'log_in', component: LogInComponent},
   {path: 'registrieren', component: RegistrierenComponent},
-  {path: 'willkommen', component: WillkommenComponent}
+  {path: 'willkommen', component: WillkommenComponent},
+  {path: 'kopfzeile', component:KopfzeileComponent}
+
 
 ];
 

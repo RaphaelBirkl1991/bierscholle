@@ -1,3 +1,11 @@
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+
+
+
 <h2>Biersorten:</h2>
 
   <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br>
