@@ -9,7 +9,6 @@
 
 body {
   margin: 0;
-  /*background-image: url("https://www.dastegernsee.de/sites/default/files/styles/xlarge_900x_/public/2022-05/Biergarten_DAS%20TEGERNSEE_.jpg?itok=Tlz6f0xo");*/
 }
 
 .container {
@@ -108,7 +107,6 @@ app-kopfzeile {
   width: 100%;
   height: 68px;
   background-color: lightskyblue;
-  /*background-color: #1976d2;*/
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -116,12 +114,11 @@ app-kopfzeile {
   align-items: center;
 }
 
-app-kopfzeile a {
+app-kopfzeile h1 {
   color: white;
   margin: 0;
   font-family: sans-serif;
 }
-
 
 
 .warenkorb-item, .versand-item {
@@ -136,47 +133,7 @@ app-kopfzeile a {
   border-radius: 2px;
   background-color: #EEEEEE;
 }
-/*app-hauptseite{*/
-/*background-image: url("Foto5.jpg");*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*  object-fit: cover;*/
-/*  background-size: cover;*/
-/*  !*width: 100%;*!*/
-/*  !*height: 650px;*!*/
-/*}*/
-/*app-registrieren{*/
-/*  background-image: url("Foto1.jpg");*/
-/*  object-fit: cover;*/
-/*  background-size: cover;*/
-/*  width: 100%;*/
-/*  height: 95vh;*/
-/*}*/
-/*app-willkommen{*/
-/*  background-image: url("Foto4.jpg");*/
-/*  object-fit: cover;*/
-/*  background-size: cover;*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*}*/
-/*app-log-in{*/
-/*  background-image: url("Foto2.jpg");*/
-/*  object-fit: cover;*/
-/*  background-size: cover;*/
-/*  width: 100%;*/
-/*  height: 100vh;*/
-/*}*/
-/*  app-schlussseite {*/
-/*    background-image: url("Pfiad Di.jpg");*/
-/*    !*object-fit: cover;*!*/
-/*    background-size: cover;*/
-/*    width: 100%;*/
-/*    height:700px;*/
-/*  }*/
-/*  app-kopfzeile{*/
-/*    background-image: url("Foto10.jpg");*/
 
-/*  }*/
 app-hauptseite h1{
   color: #1976d2;
   font-size: 50px;
@@ -196,13 +153,13 @@ button{
   /*background: #11cdd4;*/
   background: lightskyblue;
   /*background-image: -webkit-linear-gradient(top, lightskyblue, #11999e);*/
-  background-ground-image: -webkit-linear-gradient(top, lightskyblue, lightskyblue);
+  background-image: -webkit-linear-gradient(top, lightskyblue, lightskyblue);
   background-image: -moz-linear-gradient(top, lightskyblue, lightskyblue);
   background-image: -ms-linear-gradient(top, lightskyblue, lightskyblue);
   background-image: -o-linear-gradient(top, lightskyblue, lightskyblue);
   background-image: linear-gradient(to bottom, lightskyblue, lightskyblue);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
+  /*-webkit-border-radius: 8;*/
+  /*-moz-border-radius: 8;*/
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
@@ -221,13 +178,12 @@ button:hover{
 }
 
 app-log-in {
-  text-align: center;
+  /*text-align: center;*/
   background-image: url("Foto1.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
-  text-align: left;
+  /*text-align: left;*/
 }
-
 
 

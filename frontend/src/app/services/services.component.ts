@@ -29,6 +29,10 @@ export class AuthService {
     const body = { email, password };
     return this.http.post<any>('/api/register', body);
   }
+
+
+
+
 }
 @Component({
   selector: 'app-services',

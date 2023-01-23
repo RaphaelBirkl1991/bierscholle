@@ -1,10 +1,14 @@
 package com.example.backend.entity;
 
+import com.example.backend.repository.ProduktRepository;
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 
 @Entity
 @Table(name = "Produktübersicht")
 public class Produkt {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,6 +17,7 @@ public class Produkt {
     private int anzahl;
     private String bezeichnung;
     private double preis;
+    @Lob @Column(name = "beschreibung", columnDefinition = "CLOB")
     private String beschreibung;
 
     @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.REFRESH }, fetch = FetchType.LAZY)
@@ -26,6 +31,7 @@ public class Produkt {
         this.preis = preis;
         this.beschreibung = beschreibung;
     }
+
 
     public String getBezeichnung() {
         return bezeichnung;
@@ -66,4 +72,9 @@ public class Produkt {
     public void setWarenkorb(Warenkorb warenkorb) {
         this.warenkorb = warenkorb;
     }
+
+
+
+
+
 }
