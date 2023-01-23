@@ -3,5 +3,5 @@ export interface Produkt {
   bezeichnung: string;
   preis: number;
   beschreibung: string;
-  url: string;
+  // url: string;
 }
