@@ -29,6 +29,9 @@ public class Produkt {
     @Lob @Column(name = "beschreibung", columnDefinition = "CLOB")
     private String beschreibung;
 
+//    @Lob @Column(name = "image")
+//    private byte[] image;
+
     @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.REFRESH }, fetch = FetchType.LAZY)
     private Warenkorb warenkorb;
 
