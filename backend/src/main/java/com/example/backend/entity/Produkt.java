@@ -1,11 +1,13 @@
 package com.example.backend.entity;
 
-import com.example.backend.repository.ProduktRepository;
 import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
+
 @Table(name = "Produktübersicht")
 public class Produkt {
 
@@ -17,64 +19,39 @@ public class Produkt {
     private int anzahl;
     private String bezeichnung;
     private double preis;
+    private double alkoholgehalt;
+    private String brautyp;
+    private double fuellmenge;
+    private String geschmack;
+    private String bittere;
+    private String anlass;
+    private String zutaten;
     @Lob @Column(name = "beschreibung", columnDefinition = "CLOB")
     private String beschreibung;
+
+//    @Lob @Column(name = "image")
+//    private byte[] image;
 
     @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.REFRESH }, fetch = FetchType.LAZY)
     private Warenkorb warenkorb;
 
-    public Produkt() {
-    }
 
-    public Produkt(String bezeichnung, double preis, String beschreibung) {
+
+    public Produkt(String bezeichnung, double preis, double alkoholgehalt, String brautyp, double fuellmenge, String geschmack, String bittere, String anlass, String zutaten, String beschreibung) {
         this.bezeichnung = bezeichnung;
         this.preis = preis;
+        this.alkoholgehalt = alkoholgehalt;
+        this.brautyp = brautyp;
+        this.fuellmenge = fuellmenge;
+        this.geschmack = geschmack;
+        this.bittere = bittere;
+        this.anlass = anlass;
+        this.zutaten = zutaten;
         this.beschreibung = beschreibung;
-    }
-
-
-    public String getBezeichnung() {
-        return bezeichnung;
-    }
-
-    public void setBezeichnung(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
-    }
-
-    public double getPreis() {
-        return preis;
-    }
-
-    public void setPreis(double preis) {
-        this.preis = preis;
-    }
-
-    public String getBeschreibung() {
-        return beschreibung;
-    }
-
-    public void setBeschreibung(String beschreibung) {
-        this.beschreibung = beschreibung;
-    }
-
-    public int getAnzahl() {
-        return anzahl;
-    }
-
-    public void setAnzahl(int anzahl) {
-        this.anzahl = anzahl;
-    }
-
-    public Warenkorb getWarenkorb() {
-        return warenkorb;
-    }
-
-    public void setWarenkorb(Warenkorb warenkorb) {
         this.warenkorb = warenkorb;
     }
 
+    public Produkt() {
 
-
-
-
+    }
 }
