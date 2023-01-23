@@ -1,110 +1,39 @@
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+
+
+
 <h2>Biersorten:</h2>
 
-<div *ngFor="let produkt of produkte">
-
-  <h3>
-    <a [title]="produkt.bezeichnung + ' details' "
-       [routerLink]="['api/produkt_sortiment', produkt.id]">
-      {{ produkt.bezeichnung }}
-    </a>
-  </h3>
-
-<!--  <p *ngIf="produkt.beschreibung">-->
-<!--    Beschreibung: {{ produkt.beschreibung}}-->
-<!--  </p>-->
-
-
-</div>
+  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br>
+    <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>
+  </div>
 
 
 
-<!--<ul class="biere">-->
-<!--  <li *ngFor="let produkt of produkte">-->
-<!--    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">-->
-<!--      <span class="badge">{{hero.id}}</span>-->
-<!--      <span class="name">{{hero.name}}</span>-->
-<!--    </button>-->
-<!--  </li>-->
-<!--</ul>-->
+<div *ngIf="gewPodukt">
+  <h2>{{gewPodukt.bezeichnung | uppercase}} Details</h2>
+  <h4>{{gewPodukt.beschreibung}}</h4>
+  <h4>{{gewPodukt.preis}}</h4>
 
-
-
-<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
-<div style="display:inline-flex; margin-right: 550px; border: 1px solid black;padding: 250px "  >
-
-<div *ngFor="let produkt of produkte" style="display:inline-flex; margin-right: 50px; border: 1px solid black; ">
-<div class="col">
-  <div class="card shadow-sm">
-<!--    <img  class="bd-placeholder-img card-img-top" width="150px" src="Bier">-->
-    <img  class="bd-placeholder-img card-img-top" width="150px" src="{{produkt.url}}">
-
-    <div class="card-body">
-      <p class="card-text">
-        {{ produkt.preis }}
-        <br>
-        {{ produkt.beschreibung }}
-        <br>
-        {{ produkt.bezeichnung }}
-
-
-      </p>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-outline-secondary">In die Biertasche</button>
-          <button type="button" class="btn btn-sm btn-outline-secondary">Bier-Details</button>
-        </div>
-        <small class="text-muted">Inhalt 0.33L</small>
-      </div>
-    </div>
+  <div>
+    {{produkt.bezeichnung}}<br>{{produkt.beschreibung}}<br>{{produkt.preis}}
   </div>
 </div>
 
-</div>
 
 
-<div *ngFor="let produkt of produkte" style="display:inline-flex; margin-right: 50px; border: 1px solid black; ">
-  <div class="col">
-    <div class="card shadow-sm">
-      <img  class="bd-placeholder-img card-img-top" width="150px" src="https://cdn02.plentymarkets.com/99cbvkn2wswt/item/images/1241/full/Ratsherrn-Pilsener-0-33-l-Bierflasche-kaufen.jpg">
 
-      <div class="card-body">
-        <p class="card-text">
-          {{ produkt.preis }}
-          <br>
-          {{ produkt.beschreibung }}
-          <br>
-          {{ produkt.bezeichnung }}
+<!--vorheriger code-->
 
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary">In die Biertasche</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Bier-Details</button>
-          </div>
-          <small class="text-muted">Inhalt 0.33L</small>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--<div *ngFor="let produkt of produkte">-->
 
-</div>
-</div>
-
-<!--<div class="col">-->
-<!--  <div class="card shadow-sm">-->
-<!--    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"-->
-<!--         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"-->
-<!--         focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%"-->
-<!--          fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-<!--    <div class="card-body">-->
-<!--      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-<!--      <div class="d-flex justify-content-between align-items-center">-->
-<!--        <div class="btn-group">-->
-<!--          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>-->
-<!--          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
-<!--        </div>-->
-<!--        <small class="text-muted">9 mins</small>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+<!--  <h3>-->
+<!--    <a [title]="produkt.bezeichnung "[routerLink]="['api/produkt_sortiment', produkt.id]">-->
+<!--      {{ produkt.bezeichnung }}-->
+<!--    </a>-->
+<!--  </h3>-->
 <!--</div>-->

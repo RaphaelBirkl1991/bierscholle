@@ -9,21 +9,27 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ProduktListeComponent implements OnInit{
   produkte: Produkt[] = [];
-  produkt: Produkt = {bezeichnung: '', preis: 0, beschreibung: '', id: 0, url:''};
+  produkt: Produkt = {bezeichnung: '', preis: 0, beschreibung: '', id: 0};
+  gewPodukt?: Produkt;
 
   constructor(private http: HttpClient) {}
 
+
+
   ngOnInit(): void {  this.http.get<Produkt[]>('/api/produkt_sortiment').subscribe(p => this.produkte = p);}
+
+  onSelect(produkt: Produkt): void {
+    this.gewPodukt = produkt;
+  }
+
+
+
+
+
+
+
 
 }
 
 
-//
-//
-// export class HeroesComponent {
-//   heroes = HEROES;
-//   selectedHero?: Hero;
-//
-//   onSelect(hero: Hero): void {
-//     this.selectedHero = hero;
-//   }
+
