@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ProduktListeComponent implements OnInit{
   produkte: Produkt[] = [];
-  produkt: Produkt = {bezeichnung: '', preis: 0, beschreibung: '', id: 0};
+  produkt: Produkt = {bezeichnung: '', preis: 0, beschreibung: '', id: 0, url:''};
 
   constructor(private http: HttpClient) {}
 
