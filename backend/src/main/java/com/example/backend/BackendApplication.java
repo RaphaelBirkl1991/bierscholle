@@ -163,7 +163,7 @@ public class BackendApplication {
 ////
 ////             Dummy Warenkörbe
 
-            Warenkorb warenkorb1 = new Warenkorb(List.of(Gansbraeu, MayersBrauwerk));
+            Warenkorb warenkorb1 = new Warenkorb("Gansbräu", 24.00);
 
             warenkorbRepository.save(warenkorb1);
 

@@ -19,7 +19,7 @@
 
 <!--{{expression}}-->
 <!--[target]="expression"-->
-<form (submit)="save()" >
+<form>
 <div *ngIf="gewPodukt">
   <h3> {{gewPodukt.bezeichnung | uppercase}}</h3><br>
   <br><strong>Preis:</strong> {{gewPodukt.preis | currency: ' € '}}><br>
@@ -32,7 +32,7 @@
   <br><strong>Zutaten:</strong> {{gewPodukt.zutaten}}<br>
   <br><strong>Beschreibung:</strong> {{gewPodukt.beschreibung}}<br>
   <br><div><img src="{{gewPodukt.bildUrl}}"></div>
-  <a routerLink="/warenkorb"><button type="submit">In den Warenkorb</button></a>
+  <a routerLink="/warenkorb"><button (click)="save()" type="submit">In den Warenkorb</button></a>
 
 </div>
 </form>

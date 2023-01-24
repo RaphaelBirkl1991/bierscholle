@@ -17,13 +17,14 @@ public class Warenkorb {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @OneToMany(mappedBy = "warenkorb")
-    private List<Produkt> produkte;
+
+//    @OneToMany(mappedBy = "warenkorb")
+//    private List<Produkt> produkte;
    // private int menge;
 
     //@JoinColumn
-    //private String produktbezeichnung;
-//    private double preis;
+    private String produktbezeichnung;
+    private double preis;
 
 
 
@@ -34,7 +35,9 @@ public class Warenkorb {
     public Warenkorb() {
     }
 
-    public Warenkorb(List<Produkt> produkte) {
-        this.produkte = produkte;
+
+    public Warenkorb(String produktbezeichnung, double preis) {
+        this.produktbezeichnung = produktbezeichnung;
+        this.preis = preis;
     }
 }

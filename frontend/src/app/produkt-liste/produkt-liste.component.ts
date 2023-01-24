@@ -29,15 +29,16 @@ export class ProduktListeComponent implements OnInit{
 
   onSelect(produkt: Produkt): void {
     this.gewPodukt = produkt;
-    this.neuerWarenkorb.produktbezeichnung = this.gewPodukt.bezeichnung;
-    this.neuerWarenkorb.preis = this.gewPodukt.preis;
   }
 
-  save() {
-    this.http.post<Warenkorb[]>('/warenkorb', this.neuerWarenkorb).subscribe(w => this.warenkorb = w);
+    save()
+    {
+
+
+      this.http.post<Warenkorb>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
+
 
   }
-
 
 
 
