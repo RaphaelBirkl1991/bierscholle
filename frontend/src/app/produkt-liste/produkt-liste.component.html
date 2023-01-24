@@ -17,12 +17,11 @@
 <br>
 <br>
 
-<!--{{expression}}-->
-<!--[target]="expression"-->
+
 <form>
 <div *ngIf="gewProdukt">
   <h3> {{gewProdukt.bezeichnung | uppercase}}</h3><br>
-  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}><br>
+  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}<br>
   <br><strong>Alkoholgehalt:</strong> {{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰<br>
   <br><strong>Brautyp:</strong> {{gewProdukt.brautyp}}<br>
   <br><strong>Füllmenge:</strong> {{gewProdukt.fuellmenge}}<br>
@@ -43,15 +42,3 @@
 
 
 
-
-
-<!--vorheriger code-->
-
-<!--<div *ngFor="let produkt of produkte">-->
-
-<!--  <h3>-->
-<!--    <a [title]="produkt.bezeichnung "[routerLink]="['api/produkt_sortiment', produkt.id]">-->
-<!--      {{ produkt.bezeichnung }}-->
-<!--    </a>-->
-<!--  </h3>-->
-<!--</div>-->

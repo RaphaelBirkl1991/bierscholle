@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Warenkorb} from "../warenkorb";
 import {HttpClient} from "@angular/common/http";
 
@@ -7,11 +7,18 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './warenkorb.component.html',
   styleUrls: ['./warenkorb.component.css']
 })
-export class WarenkorbComponent {
+export class WarenkorbComponent implements OnInit{
 
+  warenkorbe: Warenkorb[] = [];
   warenkorb: Warenkorb= {produktbezeichnung: '', preis: 0};
 
+  // Warenkorb?: Warenkorb;
+
   constructor(private http: HttpClient) {
+  }
+
+  ngOnInit(): void {
+    this.http.get<Warenkorb[]>('api/warenkorb').subscribe(w => this.warenkorbe = w);
   }
 
 

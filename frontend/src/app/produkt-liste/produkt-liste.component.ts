@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Produkt} from "../produkt";
 import {HttpClient} from "@angular/common/http";
-import {Kunde} from "../kunde";
 import {Warenkorb} from "../warenkorb";
 
 @Component({
@@ -32,19 +31,11 @@ export class ProduktListeComponent implements OnInit{
     this.gewProdukt = produkt;
   }
 
-  // save(bezeichnung: string, preis: number)
-  //   {
-  //      this.http.post<Produkt>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
-  // }
 
   save(bezeichnung: string, preis: number) {
     this.neuerWarenkorb = { produktbezeichnung: bezeichnung, preis: preis };
     this.http.post<Produkt>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
   }
-
-
-
-
 
 }
 

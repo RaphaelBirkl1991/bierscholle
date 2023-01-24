@@ -2,11 +2,9 @@ package com.example.backend.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
 
 @Entity
 @Getter @Setter
@@ -28,7 +26,7 @@ public class Warenkorb {
 
 
 
-    // TODO ER zu Versand
+//    // TODO ER zu Versand
 //    @Enumerated(EnumType.STRING)
 //    private Versand versand;
 
