@@ -20,24 +20,26 @@
 <!--{{expression}}-->
 <!--[target]="expression"-->
 <form>
-<div *ngIf="gewPodukt">
-  <h3> {{gewPodukt.bezeichnung | uppercase}}</h3><br>
-  <br><strong>Preis:</strong> {{gewPodukt.preis | currency: ' € '}}><br>
-  <br><strong>Alkoholgehalt:</strong> {{gewPodukt.alkoholgehalt |number:'.0-2'}} ‰<br>
-  <br><strong>Brautyp:</strong> {{gewPodukt.brautyp}}<br>
-  <br><strong>Füllmenge:</strong> {{gewPodukt.fuellmenge}}<br>
-  <br><strong>Geschmack:</strong> {{gewPodukt.geschmack}}<br>
-  <br><strong>Bittere:</strong> {{gewPodukt.bittere}}<br>
-  <br><strong>Anlass:</strong> {{gewPodukt.anlass}}<br>
-  <br><strong>Zutaten:</strong> {{gewPodukt.zutaten}}<br>
-  <br><strong>Beschreibung:</strong> {{gewPodukt.beschreibung}}<br>
-  <br><div><img src="{{gewPodukt.bildUrl}}"></div>
-  <a routerLink="/warenkorb"><button (click)="save()" type="submit">In den Warenkorb</button></a>
+<div *ngIf="gewProdukt">
+  <h3> {{gewProdukt.bezeichnung | uppercase}}</h3><br>
+  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}><br>
+  <br><strong>Alkoholgehalt:</strong> {{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰<br>
+  <br><strong>Brautyp:</strong> {{gewProdukt.brautyp}}<br>
+  <br><strong>Füllmenge:</strong> {{gewProdukt.fuellmenge}}<br>
+  <br><strong>Geschmack:</strong> {{gewProdukt.geschmack}}<br>
+  <br><strong>Bittere:</strong> {{gewProdukt.bittere}}<br>
+  <br><strong>Anlass:</strong> {{gewProdukt.anlass}}<br>
+  <br><strong>Zutaten:</strong> {{gewProdukt.zutaten}}<br>
+  <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>
+  <br><div><img src="{{gewProdukt.bildUrl}}"></div>
+
+  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">In den Warenkorb</button></a>
 
 </div>
 </form>
 
 
+<router-outlet></router-outlet>
 
 
 

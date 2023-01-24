@@ -14,7 +14,8 @@ export class ProduktListeComponent implements OnInit{
   produkt: Produkt = {bezeichnung: '', preis: 0, alkoholgehalt: 0, brautyp: '', fuellmenge: 0, geschmack: '', bittere: '',
                       anlass: '', zutaten: '', beschreibung: '', bildUrl: '', id: 0};
 
-  gewPodukt?: Produkt;
+  gewProdukt?: Produkt;
+
 
   warenkorb: Warenkorb[] = [];
   neuerWarenkorb: Warenkorb = {produktbezeichnung: '', preis: 0};
@@ -28,19 +29,18 @@ export class ProduktListeComponent implements OnInit{
   ngOnInit(): void {  this.http.get<Produkt[]>('/api/produkt_sortiment').subscribe(p => this.produkte = p);}
 
   onSelect(produkt: Produkt): void {
-    this.gewPodukt = produkt;
+    this.gewProdukt = produkt;
   }
 
-    save()
-    {
+  // save(bezeichnung: string, preis: number)
+  //   {
+  //      this.http.post<Produkt>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
+  // }
 
-
-      this.http.post<Warenkorb>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
-
-
+  save(bezeichnung: string, preis: number) {
+    this.neuerWarenkorb = { produktbezeichnung: bezeichnung, preis: preis };
+    this.http.post<Produkt>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
   }
-
-
 
 
 
