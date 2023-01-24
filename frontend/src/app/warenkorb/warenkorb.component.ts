@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {WarenkorbService} from "./warenkorb.service";
 import {Warenkorb} from "../warenkorb";
 import {HttpClient} from "@angular/common/http";
 
@@ -10,20 +9,10 @@ import {HttpClient} from "@angular/common/http";
 })
 export class WarenkorbComponent {
 
-    // warenkorb: Warenkorb[] = [];
-    // neuerWarenkorb: Warenkorb = {produktbezeichnung: '', preis: 0};
+  warenkorb: Warenkorb= {produktbezeichnung: '', preis: 0};
 
-  // constructor(private http: HttpClient) { }
-  //
-  // ngOnInit(): void{
-
-  // }
-
-
-  // save() {
-  //   this.http.post<Warenkorb[]>('/warenkorb', this.neuerWarenkorb).subscribe(w => this.warenkorb = w);
-  // }
-
+  constructor(private http: HttpClient) {
+  }
 
 
 }

@@ -20,13 +20,6 @@ public class ProduktController {
         this.produktRepository = produktRepository;
     }
 
-    // Liste mit verschiedenen Produkten
-
-//     public List<ProduktDTO> produktliste = List.of(
-//            new ProduktDTO("Benedictus", 23.00, "Das Original aus dem Kloster Scheyern"),
-//            new ProduktDTO("Chiemseer", 22.00, "Immer eine gute Wahl"),
-//            new ProduktDTO("Altmühltaler Hell", 24.00, "Das besondere Bier für die echten Kenner")
-//    );
 
 
     @GetMapping("api/produkt_sortiment")

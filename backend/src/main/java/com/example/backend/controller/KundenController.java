@@ -26,7 +26,7 @@ public class KundenController {
     }
 
     @PostMapping("api/kundendaten_anlegen")
-    public void save(@RequestBody Kunde kunde) {  // here is the new stuff!!!!
+    public void save(@RequestBody Kunde kunde) {
         kundenRepository.save(new Kunde(kunde.getVorname(), kunde.getNachname(), kunde.getStrasse(),
                                 kunde.getHausnummer(), kunde.getPlz(), kunde.getOrt(), kunde.getEmail(),
                                 kunde.getTelefonnummer()));
