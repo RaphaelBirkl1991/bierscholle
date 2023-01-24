@@ -1,21 +1,19 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { AuthService } from 'src/app/services/services.component';
 import {Kunde} from "../kunde";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'app-registrieren',
-  templateUrl: './registrieren.component.html',
-  styleUrls: ['./registrieren.component.css']
+  selector: 'app-kundendaten-anlegen',
+  templateUrl: './kundendaten-anlegen.component.html',
+  styleUrls: ['./kundendaten-anlegen.component.css']
 })
 
 
-export class RegistrierenComponent {
+export class KundendatenAnlegenComponent {
 
 
   kunden: Kunde[] = [];
-  neuerKunde: Kunde = {vorname: '', nachname: '', strasse: '', hausnummer: 0, plz: 0, ort: '', email: '', passwort:''};
+  neuerKunde: Kunde = {vorname: '', nachname: '', strasse: '', hausnummer: 0, plz: 0, ort: '', email: '', telefonnummer: ''};
 
 
   //constructor(private authService: AuthService, private router: Router) {}
@@ -29,7 +27,7 @@ export class RegistrierenComponent {
 
 
  save() {
-    this.http.post<Kunde[]>('api/registrieren', this.neuerKunde).subscribe(k => this.kunden = k);
+    this.http.post<Kunde>('api/kundendaten_anlegen', this.neuerKunde).subscribe();
  }
 
 

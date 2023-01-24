@@ -25,10 +25,10 @@ export class AuthService {
     return this.http.post<any>('/api/login', body);
   }
 
-  register(email: string, password: string): Observable<any> {
-    const body = { email, password };
-    return this.http.post<any>('/api/register', body);
-  }
+  // register(email: string, password: string): Observable<any> {
+  //   const body = { email, password };
+  //   return this.http.post<any>('/api/register', body);
+  // }
 
 
 

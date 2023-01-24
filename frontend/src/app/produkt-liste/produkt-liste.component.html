@@ -16,10 +16,14 @@
 <br>
 <br>
 <br>
+
+<!--{{expression}}-->
+<!--[target]="expression"-->
+<form (submit)="save()" >
 <div *ngIf="gewPodukt">
-  <h3>{{gewPodukt.bezeichnung | uppercase}}</h3><br>
-  <br><strong>Preis:</strong> {{gewPodukt.preis}}<br>
-  <br><strong>Alkoholgehalt:</strong> {{gewPodukt.alkoholgehalt | number}} ‰<br>
+  <h3> {{gewPodukt.bezeichnung | uppercase}}</h3><br>
+  <br><strong>Preis:</strong> {{gewPodukt.preis | currency: ' € '}}><br>
+  <br><strong>Alkoholgehalt:</strong> {{gewPodukt.alkoholgehalt |number:'.0-2'}} ‰<br>
   <br><strong>Brautyp:</strong> {{gewPodukt.brautyp}}<br>
   <br><strong>Füllmenge:</strong> {{gewPodukt.fuellmenge}}<br>
   <br><strong>Geschmack:</strong> {{gewPodukt.geschmack}}<br>
@@ -27,12 +31,14 @@
   <br><strong>Anlass:</strong> {{gewPodukt.anlass}}<br>
   <br><strong>Zutaten:</strong> {{gewPodukt.zutaten}}<br>
   <br><strong>Beschreibung:</strong> {{gewPodukt.beschreibung}}<br>
+  <br><div><img src="{{gewPodukt.bildUrl}}"></div>
+  <a routerLink="/warenkorb"><button type="submit">In den Warenkorb</button></a>
 
-
-  <div>
-    {{produkt.bezeichnung}}<br>{{produkt.beschreibung}}<br>{{produkt.preis}}
-  </div>
 </div>
+</form>
+
+
+
 
 
 

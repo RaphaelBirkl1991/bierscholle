@@ -13,7 +13,7 @@ import { HauptseiteComponent } from './hauptseite/hauptseite.component';
 import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-beschreibung.component';
 import { ServicesComponent } from './services/services.component';
 import {LogInComponent} from "./log-in/log-in.component";
-import { RegistrierenComponent } from './registrieren/registrieren.component';
+import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
 
@@ -28,7 +28,7 @@ import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
     ProduktBeschreibungComponent,
     ServicesComponent,
     LogInComponent,
-    RegistrierenComponent,
+    KundendatenAnlegenComponent,
     WillkommenComponent,
     SchlussseiteComponent,
 
