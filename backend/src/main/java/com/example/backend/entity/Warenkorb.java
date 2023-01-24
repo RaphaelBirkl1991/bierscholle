@@ -2,10 +2,14 @@ package com.example.backend.entity;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity
+@Getter @Setter
 public class Warenkorb {
 
     // Properties
@@ -13,61 +17,24 @@ public class Warenkorb {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    @OneToMany(mappedBy = "")
+    @OneToMany(mappedBy = "warenkorb")
     private List<Produkt> produkte;
-    private int menge;
+   // private int menge;
 
-    @JoinColumn
-    private String produktbezeichnung;
+    //@JoinColumn
+    //private String produktbezeichnung;
+//    private double preis;
+
+
 
     // TODO ER zu Versand
-    @Enumerated(EnumType.STRING)
-    private Versand versand;
+//    @Enumerated(EnumType.STRING)
+//    private Versand versand;
 
     public Warenkorb() {
     }
 
-    public Warenkorb(List<Produkt> produkte, int menge, String produktbezeichnung, Versand versand) {
-        this.produkte = produkte;
-        this.menge = menge;
-        this.produktbezeichnung = produktbezeichnung;
-        this.versand = versand;
-    }
-
-
-
-    public List<Produkt> getProdukte() {
-        return produkte;
-    }
-
-    public void setProdukte(List<Produkt> produkte) {
+    public Warenkorb(List<Produkt> produkte) {
         this.produkte = produkte;
     }
-
-    public String getProduktbezeichnung() {
-        return produktbezeichnung;
-    }
-
-    public void setProduktbezeichnung(String produktbezeichnung) {
-        this.produktbezeichnung = produktbezeichnung;
-    }
-
-    public Versand getVersand() {
-        return versand;
-    }
-
-    public void setVersand(Versand versand) {
-        this.versand = versand;
-    }
-
-    public int getMenge() {
-        return menge;
-    }
-
-    public void setMenge(int menge) {
-        this.menge = menge;
-    }
-
-
 }

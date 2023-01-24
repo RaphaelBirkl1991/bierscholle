@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Produkt} from "../produkt";
 import {HttpClient} from "@angular/common/http";
+import {Kunde} from "../kunde";
+import {Warenkorb} from "../warenkorb";
 
 @Component({
   selector: 'app-produkt-liste',
@@ -10,8 +12,14 @@ import {HttpClient} from "@angular/common/http";
 export class ProduktListeComponent implements OnInit{
   produkte: Produkt[] = [];
   produkt: Produkt = {bezeichnung: '', preis: 0, alkoholgehalt: 0, brautyp: '', fuellmenge: 0, geschmack: '', bittere: '',
-    anlass: '', zutaten: '', beschreibung: '', id: 0};
+                      anlass: '', zutaten: '', beschreibung: '', bildUrl: '', id: 0};
+
   gewPodukt?: Produkt;
+
+  warenkorb: Warenkorb[] = [];
+  neuerWarenkorb: Warenkorb = {produktbezeichnung: '', preis: 0};
+
+
 
   constructor(private http: HttpClient) {}
 
@@ -21,6 +29,13 @@ export class ProduktListeComponent implements OnInit{
 
   onSelect(produkt: Produkt): void {
     this.gewPodukt = produkt;
+    this.neuerWarenkorb.produktbezeichnung = this.gewPodukt.bezeichnung;
+    this.neuerWarenkorb.preis = this.gewPodukt.preis;
+  }
+
+  save() {
+    this.http.post<Warenkorb[]>('/warenkorb', this.neuerWarenkorb).subscribe(w => this.warenkorb = w);
+
   }
 
 

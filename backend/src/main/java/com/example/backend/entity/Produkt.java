@@ -7,7 +7,6 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
 @Table(name = "Produktübersicht")
 public class Produkt {
 
@@ -29,15 +28,18 @@ public class Produkt {
     @Lob @Column(name = "beschreibung", columnDefinition = "CLOB")
     private String beschreibung;
 
+    private String bildUrl;
+
 //    @Lob @Column(name = "image")
 //    private byte[] image;
 
-    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.REFRESH }, fetch = FetchType.LAZY)
+//    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.REFRESH }, fetch = FetchType.LAZY)
+    @ManyToOne
     private Warenkorb warenkorb;
 
 
 
-    public Produkt(String bezeichnung, double preis, double alkoholgehalt, String brautyp, double fuellmenge, String geschmack, String bittere, String anlass, String zutaten, String beschreibung) {
+    public Produkt(String bezeichnung, double preis, double alkoholgehalt, String brautyp, double fuellmenge, String geschmack, String bittere, String anlass, String zutaten, String beschreibung, String bildUrl) {
         this.bezeichnung = bezeichnung;
         this.preis = preis;
         this.alkoholgehalt = alkoholgehalt;
@@ -49,6 +51,7 @@ public class Produkt {
         this.zutaten = zutaten;
         this.beschreibung = beschreibung;
         this.warenkorb = warenkorb;
+        this.bildUrl = bildUrl;
     }
 
     public Produkt() {

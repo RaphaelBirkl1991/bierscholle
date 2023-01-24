@@ -10,4 +10,5 @@ export interface Produkt {
   anlass: string;
   zutaten: string;
   beschreibung: string;
+  bildUrl: string;
 }
