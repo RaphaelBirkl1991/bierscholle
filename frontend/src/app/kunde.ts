@@ -6,6 +6,6 @@ export interface Kunde {
   plz: number;
   ort: string;
   email: string;
-  passwort: string;
+  telefonnummer: string;
 }
 

@@ -5,11 +5,12 @@
 <br>
 <br>
 <a routerLink="/produkt_liste"><em>zurück zu der Bierauswahl :)</em></a>
-<strong><h2>Registrieren</h2></strong>
+<strong><h2>Kundendaten anlagen</h2></strong>
 
 
 
-<form (submit)="save()">
+<form>
+
   <input name="vorname" type="text" [(ngModel)]="neuerKunde.vorname" placeholder="Vorname">
   <input name="nachname" type="text" [(ngModel)]="neuerKunde.nachname" placeholder="Nachname"><br>
   <input name="strasse" type="text" [(ngModel)]="neuerKunde.strasse" placeholder="Strasse">
@@ -17,10 +18,10 @@
   <input name="plz" type="text" [(ngModel)]="neuerKunde.plz" placeholder="PLZ">
   <input name="ort" type="text" [(ngModel)]="neuerKunde.ort" placeholder="Ort"><br>
   <input name="email" type="text" [(ngModel)]="neuerKunde.email" placeholder="E-mail"><br>
-  <input name="passwort" type="text" [(ngModel)]="neuerKunde.passwort" placeholder="Passwort"><br>
-  <!--  <input id="passwortBest" type="text" [(ngModel)]="passwortBest" placeholder="Passwort bestätigen">-->
+  <input name="telefonnummer" type="text" [(ngModel)]="neuerKunde.telefonnummer" placeholder="Tel."><br>
+
   <br>
-  <a routerLink="/willkommen"><button type="submit">Registrieren</button></a>
+  <a routerLink=""><button (click)="save()" type="submit" >speichern</button></a>
 
 </form>
 
