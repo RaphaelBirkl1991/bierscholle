@@ -8,6 +8,7 @@ import {HauptseiteComponent} from "./hauptseite/hauptseite.component";
 import {ProduktBeschreibungComponent} from "./produkt-beschreibung/produkt-beschreibung.component";
 import {KundendatenAnlegenComponent} from "./kundendaten-anlegen/kundendaten-anlegen.component";
 import {WillkommenComponent} from "./willkommen/willkommen.component";
+import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
   {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
+  {path: 'ueber_uns', component: UeberUnsComponent},
 
 
 ];
