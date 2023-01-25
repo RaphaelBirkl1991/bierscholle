@@ -9,6 +9,7 @@ import {ProduktBeschreibungComponent} from "./produkt-beschreibung/produkt-besch
 import {KundendatenAnlegenComponent} from "./kundendaten-anlegen/kundendaten-anlegen.component";
 import {WillkommenComponent} from "./willkommen/willkommen.component";
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
+import {KontaktComponent} from "./kontakt/kontakt.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
   {path: 'ueber_uns', component: UeberUnsComponent},
+  {path:'kontakt', component:KontaktComponent}
 
 
 ];

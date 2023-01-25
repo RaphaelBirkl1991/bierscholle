@@ -3,7 +3,7 @@ package com.example.backend;
 
 import com.example.backend.entity.Kunde;
 import com.example.backend.entity.Produkt;
-import com.example.backend.entity.Versand;
+
 import com.example.backend.entity.Warenkorb;
 import com.example.backend.repository.KundenRepository;
 import com.example.backend.repository.ProduktRepository;

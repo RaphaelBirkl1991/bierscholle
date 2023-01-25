@@ -14,6 +14,7 @@ import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-a
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
     WillkommenComponent,
     SchlussseiteComponent,
     UeberUnsComponent,
+    KontaktComponent,
 
   ],
     imports: [
