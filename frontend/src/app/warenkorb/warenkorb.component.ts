@@ -12,7 +12,7 @@ export class WarenkorbComponent implements OnInit{
   warenkorbe: Warenkorb[] = [];
   warenkorb: Warenkorb= {produktbezeichnung: '', preis: 0};
 
-  // Warenkorb?: Warenkorb;
+  Warenkorb?: Warenkorb;
 
   constructor(private http: HttpClient) {
   }
@@ -20,6 +20,13 @@ export class WarenkorbComponent implements OnInit{
   ngOnInit(): void {
     this.http.get<Warenkorb[]>('api/warenkorb').subscribe(w => this.warenkorbe = w);
   }
+
+   summe() {
+      let summe = 0;
+
+      for (let warenkorb of this.warenkorbe) {
+        summe += warenkorb.preis;     }
+      return summe;   }
 
 
 }

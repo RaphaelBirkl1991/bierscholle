@@ -1,7 +1,21 @@
 <h1>Warenkorb</h1>
 
-<br><br>
 
-<!--{{warenkorb.bezeichnung}}-->
-
-<!--</div>-->
+<table>
+  <tr>
+    <th>Produktbezeichnung</th>
+    <th>Preis</th><br><br><br>
+  </tr>
+  <tr *ngFor="let warenkorb of warenkorbe" [routerLink]="['api/warenkorb']">
+    <td>{{warenkorb.produktbezeichnung}}</td>
+    <td>{{warenkorb.preis | currency: 'EUR'}}</td>
+  </tr>
+</table>
+<br>
+<hr>
+<table>
+<tr>
+  <td>Summe:</td>
+  <td>{{summe()}}</td>
+</tr>
+</table>

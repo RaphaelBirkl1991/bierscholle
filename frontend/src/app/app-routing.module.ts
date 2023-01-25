@@ -19,8 +19,7 @@ const routes: Routes = [
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
   {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
-  {path: 'stellenangebot', component: StellenangebotComponent}
-
+  {path: 'stellenangebot', component: StellenangebotComponent},
 
 ];
 
