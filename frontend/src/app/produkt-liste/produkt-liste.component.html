@@ -43,7 +43,8 @@
   <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>
   <br><div><img src="{{gewProdukt.bildUrl}}" alt="bild"></div>
 
-  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">In den Warenkorb</button></a>
+  <a routerLink="/redirect"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Auswählen</button></a>
+  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Zum Warenkorb</button></a>
 
 </div>
 </form>

@@ -29,6 +29,12 @@ export class WarenkorbComponent implements OnInit{
       return summe;   }
 
 
+  loeschen(){
+    this.http.delete('api/warenkorb_loeschen').subscribe();
+    location.reload();
+  }
+
+
 }
 
 
