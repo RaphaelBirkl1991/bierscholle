@@ -1,3 +1,22 @@
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile-button {
+  width: 185px;
+  height: 100px;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
 /*!* HeroesComponent's private CSS styles *!*/
 /*.biere {*/
 /*  margin: 0 0 2em 0;*/
