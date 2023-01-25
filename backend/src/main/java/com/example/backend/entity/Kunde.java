@@ -16,7 +16,7 @@ public class Kunde {
     private String nachname;
     private String strasse;
     private int hausnummer;
-    @Column(length = 5)
+    @Column
     private int plz;
     private String ort;
     @Column(unique = true)

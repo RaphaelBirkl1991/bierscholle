@@ -6,7 +6,6 @@ import {WarenkorbComponent} from "./warenkorb/warenkorb.component";
 import {KundenListeComponent} from "./kunden-liste/kunden-liste.component";
 import {HauptseiteComponent} from "./hauptseite/hauptseite.component";
 import {ProduktBeschreibungComponent} from "./produkt-beschreibung/produkt-beschreibung.component";
-import {LogInComponent} from "./log-in/log-in.component";
 import {KundendatenAnlegenComponent} from "./kundendaten-anlegen/kundendaten-anlegen.component";
 import {WillkommenComponent} from "./willkommen/willkommen.component";
 
@@ -17,10 +16,8 @@ const routes: Routes = [
   {path: 'warenkorb', component: WarenkorbComponent},
   {path: 'kunden_liste', component: KundenListeComponent},
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
-  {path: 'log_in', component: LogInComponent},
   {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
-  {path: 'kopfzeile', component:KopfzeileComponent}
 
 
 ];
