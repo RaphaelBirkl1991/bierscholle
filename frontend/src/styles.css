@@ -136,18 +136,22 @@ app-kopfzeile h1 {
 
 app-hauptseite h1{
   color: #1976d2;
-  font-size: 50px;
+  font-size: 70px;
   line-height: 2;
-  margin-top: 200px;
-  text-align: left;
+  margin-top: 160px;
+  margin-left: 900px;
   font-family: 'Sacramento', cursive;
 }
 
 app-hauptseite{
+
+
+  opacity: 0.7; /* 50% Transparenz */
   background-image: url("bilder/Foto2.jpg");
   background-size: cover;
-  width: 100%;
-  height: 100vh;
+  margin-top: 60px;
+  width: 700px;
+  height: 500px;
 }
 button{
   /*background: #11cdd4;*/
@@ -177,14 +181,19 @@ button:hover{
   text-decoration: none;
 }
 
-app-log-in {
+app-warenkorb {
+  opacity: 0.7;
   /*text-align: center;*/
-  background-image: url("bilder/Foto1.jpg");
+  /*background-image: url("bilder/Foto1.jpg");*/
   background-size: cover;
-  width: 100%;
-  height: 100vh;
+  margin-top: 60px;
+  margin-left: 500px;
+  width: 700px;
+  height: 500px;
   /*text-align: left;*/
 }
+
+
 app-kontakt{
  /*background-image: url("kontakt.jpg");*/
   background-size: cover;
