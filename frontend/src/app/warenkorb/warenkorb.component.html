@@ -8,14 +8,25 @@
   </tr>
   <tr *ngFor="let warenkorb of warenkorbe" [routerLink]="['api/warenkorb']">
     <td>{{warenkorb.produktbezeichnung}}</td>
-    <td>{{warenkorb.preis | currency: 'EUR'}}</td>
+    <td>{{warenkorb.preis | euroFormatierung}}</td>
   </tr>
+  <tr>
+  <td><hr></td>
+    <td><hr></td>
+  </tr>
+
+
+  <tr>
+    <td><strong>Summe:</strong></td>
+    <td><strong>{{summe() | euroFormatierung }}</strong></td>
 </table>
 <br>
-<hr>
-<table>
-<tr>
-  <td>Summe:</td>
-  <td>{{summe()}}</td>
-</tr>
-</table>
+
+
+
+<!--<table>-->
+<!--<tr>-->
+<!--  <td>Summe:</td>-->
+<!--  <td>{{summe()}}</td>-->
+<!--</tr>-->
+<!--</table>-->

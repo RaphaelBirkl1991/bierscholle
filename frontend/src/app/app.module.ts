@@ -13,6 +13,7 @@ import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-bes
 import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { StellenangebotComponent } from './stellenangebot/stellenangebot.component';
+import { EuroFormatierungPipe } from './euro-formatierung.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { StellenangebotComponent } from './stellenangebot/stellenangebot.compone
     KundendatenAnlegenComponent,
     WillkommenComponent,
     StellenangebotComponent,
+    EuroFormatierungPipe,
 
   ],
     imports: [
