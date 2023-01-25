@@ -16,6 +16,7 @@ import {LogInComponent} from "./log-in/log-in.component";
 import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
+import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
     KundendatenAnlegenComponent,
     WillkommenComponent,
     SchlussseiteComponent,
+    UeberUnsComponent,
 
   ],
     imports: [
