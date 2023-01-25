@@ -7,10 +7,21 @@
 
 
 <h2>Biersorten:</h2>
+<div class="tile-container">
+  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br><br>
 
-  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br>
-    <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>
+    <a [routerLink]="['api/produkt_sortiment', produkt.id]">
+      <img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)" alt="Foto">
+    </a>
+
+
+
+    <!--    <button type="button" class="button"></button>-->
+<!--    <a><button><img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)")></button></a>-->
+<!--    <button type="button" class="tile-button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
+<!--    <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
   </div>
+</div>
 <br>
 <br>
 <br>
@@ -30,9 +41,10 @@
   <br><strong>Anlass:</strong> {{gewProdukt.anlass}}<br>
   <br><strong>Zutaten:</strong> {{gewProdukt.zutaten}}<br>
   <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>
-  <br><div><img src="{{gewProdukt.bildUrl}}"></div>
+  <br><div><img src="{{gewProdukt.bildUrl}}" alt="bild"></div>
 
-  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">In den Warenkorb</button></a>
+  <a routerLink="/redirect"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Auswählen</button></a>
+  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Zum Warenkorb</button></a>
 
 </div>
 </form>

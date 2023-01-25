@@ -4,10 +4,7 @@ package com.example.backend.controller;
 import com.example.backend.entity.Warenkorb;
 import com.example.backend.repository.WarenkorbRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +24,9 @@ public class WarenkorbController {
         warenkorbRepository.save(new Warenkorb(warenkorb.getProduktbezeichnung(), warenkorb.getPreis()));
     }
 
+    @DeleteMapping("api/warenkorb_loeschen")
+    public void loeschen(){
+    warenkorbRepository.deleteAll();
+    }
 
 }
