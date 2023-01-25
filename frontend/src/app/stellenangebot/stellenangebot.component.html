@@ -1,0 +1,55 @@
+<h1>Du liebst den goldenen Göttertrunk genauso wie wir? </h1>
+<br><br>
+<h2>Dann Job abgreifen und mitmachen: wir warten schon auf deine Bewerbung :)</h2>
+
+
+Aktuell haben wir folgende Stellen zu besetzen:
+<br><br><br><br><br><br>
+<div *ngFor="let stellenangebot of stellenangebote" [routerLink]="['api/stellenangebot']">
+
+  <table>
+    <tr>
+      <th><h2>{{stellenangebot.stellenbezeichnung}}</h2></th>
+    </tr><br>
+
+    <tr>
+      <td>Stellen-id:</td>
+      <td>BS-MUC/000{{stellenangebot.id}}</td>
+    </tr><br>
+
+    <tr>
+      <td>Einsatzort: </td>
+      <td>{{stellenangebot.einsatzort}}</td>
+    </tr><br>
+
+    <tr>
+      <td>Das bringst du mit: </td>
+      <td>{{stellenangebot.anforderungen}}</td>
+    </tr><br>
+
+    <tr>
+      <td>Diese Benefits warten auf dich: </td>
+      <td>{{stellenangebot.benefits}}</td>
+    </tr><br>
+
+
+    <tr>
+      <td>Ab wann wir dich brauchen: </td>
+      <td>{{stellenangebot.eintrittsdatum}}</td>
+    </tr><br>
+
+    <tr>
+      <td>Was wir dir zahlen können:</td>
+      <td>{{stellenangebot.bruttojahresgehalt}} : Bruttojahresgehalt</td>
+    </tr><br>
+
+    <tr>
+      <td>Weitere informationen: </td>
+      <td>{{stellenangebot.zusatzinformationen}}</td>
+    </tr>
+
+  </table><br><br>
+
+  {{stellenangebot.stellenbeschreibung}}
+<br><br><hr><br><br>
+</div>

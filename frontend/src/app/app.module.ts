@@ -12,6 +12,7 @@ import { HauptseiteComponent } from './hauptseite/hauptseite.component';
 import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-beschreibung.component';
 import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
+import { StellenangebotComponent } from './stellenangebot/stellenangebot.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { WillkommenComponent } from './willkommen/willkommen.component';
     ProduktBeschreibungComponent,
     KundendatenAnlegenComponent,
     WillkommenComponent,
+    StellenangebotComponent,
 
   ],
     imports: [
