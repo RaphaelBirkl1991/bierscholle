@@ -19,6 +19,10 @@ import { KarteikartenComponent } from './karteikarten/karteikarten.component';
 
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { KartenComponent } from './karten/karten.component';
+import { KandidatenComponent } from './kandidaten/kandidaten.component';
+import { ProfilreiheComponent } from './profilreihe/profilreihe.component';
+import { NeuefahrerComponent } from './neuefahrer/neuefahrer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +42,10 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 
     UeberUnsComponent,
     KontaktComponent,
+    KartenComponent,
+    KandidatenComponent,
+    ProfilreiheComponent,
+    NeuefahrerComponent,
 
   ],
     imports: [

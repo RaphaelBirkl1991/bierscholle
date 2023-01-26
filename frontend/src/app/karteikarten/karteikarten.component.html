@@ -1,0 +1,35 @@
+<br>
+<a [routerLink]="['']">
+  <em>zurück zur Bierscholle</em>
+</a>
+<br>
+<br>
+<br>
+
+<header>
+
+  <img src="../../assets/Bierfahrerkartei/BierLogo.png.webp" width="200px" height="200px">
+
+
+
+
+</header>
+
+<div class="flexrow" >
+
+<div class="container1">
+
+
+  <app-neuefahrer></app-neuefahrer>
+
+
+
+  <app-karten *ngFor="let i of [0, 1, 2, 3, 4]" [bilder]="BierBilder[i]"  [text]= "Biertexte[i]"></app-karten>
+
+
+
+
+</div>
+  <app-kandidaten></app-kandidaten>
+</div>
+

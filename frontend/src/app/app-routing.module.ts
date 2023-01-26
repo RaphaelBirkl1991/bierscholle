@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
   {path: 'kopfzeile', component:KopfzeileComponent},
-  {path: 'karteikarten', component:KarteikartenComponent}
+  {path: 'karteikarten', component:KarteikartenComponent},
   {path: 'stellenangebot', component: StellenangebotComponent},
   {path: 'ueber_uns', component: UeberUnsComponent},
   {path:'kontakt', component:KontaktComponent}
