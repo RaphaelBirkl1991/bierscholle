@@ -1,36 +1,96 @@
-import { Component } from '@angular/core';
-import {WarenkorbService} from "./warenkorb.service";
+import {Component, OnInit} from '@angular/core';
+import {Warenkorb} from "../warenkorb";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-warenkorb',
   templateUrl: './warenkorb.component.html',
   styleUrls: ['./warenkorb.component.css']
 })
-export class WarenkorbComponent {
+export class WarenkorbComponent implements OnInit{
 
-  items = this.warenkorbService.getItems();
+  warenkorbe: Warenkorb[] = [];
+  warenkorb: Warenkorb= {produktbezeichnung: '', preis: 0};
 
-  constructor(
-    private warenkorbService: WarenkorbService
-  ) { }
+  Warenkorb?: Warenkorb;
 
-  kaufen() {
-    window.alert('Gekauft!');
+  constructor(private http: HttpClient) {
   }
 
-  total() {
-    let sum = 0;
-    for (let item of this.items) {
-      sum += item.preis;
-    }
-    return sum;
+  ngOnInit(): void {
+    this.http.get<Warenkorb[]>('api/warenkorb').subscribe(w => this.warenkorbe = w);
   }
 
+   summe() {
+      let summe = 0;
 
-  remove(id: number) {
-    // this.items = this.items.filter(items => items.id !== id);
-    // this.items.splice(this.items.indexOf(id), 1 );
-    this.items = this.items.splice(1,7);
+      for (let warenkorb of this.warenkorbe) {
+        summe += warenkorb.preis;     }
+      return summe;   }
+
+
+  loeschen(){
+    this.http.delete('api/warenkorb_loeschen').subscribe();
+    location.reload();
   }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //
+  //
+  //
+  // items = this.warenkorbService.getItems();
+  //
+  // constructor(
+  //   private warenkorbService: WarenkorbService
+  // ) { }
+
+//   kaufen() {
+//     window.alert('Gekauft!');
+//   }
+//
+//   total() {
+//     let sum = 0;
+//     for (let item of this.items) {
+//       sum += item.preis;
+//     }
+//     return sum;
+//   }
+//
+//
+//   remove(id: number) {
+//     // this.items = this.items.filter(items => items.id !== id);
+//     // this.items.splice(this.items.indexOf(id), 1 );
+//     this.items = this.items.splice(1,7);
+//   }
+//
+// }

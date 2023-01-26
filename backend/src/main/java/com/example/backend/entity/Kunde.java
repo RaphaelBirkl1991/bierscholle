@@ -16,15 +16,15 @@ public class Kunde {
     private String nachname;
     private String strasse;
     private int hausnummer;
-    @Column(length = 5)
+    @Column
     private int plz;
     private String ort;
     @Column(unique = true)
     private String email;
-    private String passwort;
+    private String telefonnummer;
 
 
-    public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email, String passwort) {
+    public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email, String telefonnummer) {
         this.vorname = vorname;
         this.nachname = nachname;
         this.strasse = strasse;
@@ -32,7 +32,7 @@ public class Kunde {
         this.plz = plz;
         this.ort = ort;
         this.email = email;
-        this.passwort = passwort;
+        this.telefonnummer = telefonnummer;
     }
 
     public Kunde() {

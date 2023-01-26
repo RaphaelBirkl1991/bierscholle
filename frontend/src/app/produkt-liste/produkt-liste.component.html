@@ -4,51 +4,53 @@
 </a>
 <br>
 
-<div>
 
-  <img src="https://www.daidalos.blog/fileadmin/_processed_/0/3/csm_CoolKeg_-_das_selbstk%C3%BChlende_Fass_-_Selbst_ist_das_Bier_h_148afb92c9.jpg">
-
-</div>
 
 <h2>Biersorten:</h2>
+<div class="tile-container">
+  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br><br>
+
+    <a [routerLink]="['api/produkt_sortiment', produkt.id]">
+      <img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)" alt="Foto">
+    </a>
 
 
-<div style="display: inline-block" *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br>
-  <div class="bierprodukte"
-       style=" margin-right:50px; border: 1px solid black; height: 100%; width: 250px ">
-    <div class="col">
-      <div class="card shadow-sm">
-        <img class="bd-placeholder-img card-img-top" width="50px"
-             src="https://i.etsystatic.com/15873908/r/il/3a094b/1957691982/il_fullxfull.1957691982_9z8v.jpg">
-        <div class="card-body">
-          <p class="card-text">Text.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button  type="button" class="btn btn-sm btn-outline-secondary">Platzhalter</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Zum Warenkorb</button>
-              <br>
-              <button style="height: 100px; width: 200px;" type="button" [innerText]="produkt.bezeichnung"
-                      (click)="onSelect(produkt)"></button>
-            </div>
-            <br>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <!--    <button type="button" class="button"></button>-->
+<!--    <a><button><img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)")></button></a>-->
+<!--    <button type="button" class="tile-button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
+<!--    <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
   </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<!-- Aus diesem Container kommen die Bier-Details-->
 
-<div *ngIf="gewPodukt">
-  <h3>{{gewPodukt.bezeichnung | uppercase}}</h3><br>
-  <br><strong>Preis:</strong> {{gewPodukt.preis}}<br>
-  <br><strong>Alkoholgehalt:</strong> {{gewPodukt.alkoholgehalt | number}} ‰<br>
-  <br><strong>Brautyp:</strong> {{gewPodukt.brautyp}}<br>
-  <br><strong>Füllmenge:</strong> {{gewPodukt.fuellmenge}}<br>
-  <br><strong>Geschmack:</strong> {{gewPodukt.geschmack}}<br>
-  <br><strong>Bittere:</strong> {{gewPodukt.bittere}}<br>
-  <br><strong>Anlass:</strong> {{gewPodukt.anlass}}<br>
-  <br><strong>Zutaten:</strong> {{gewPodukt.zutaten}}<br>
-  <br><strong>Beschreibung:</strong> {{gewPodukt.beschreibung}}<br>
+<form>
+<div *ngIf="gewProdukt">
+  <h3> {{gewProdukt.bezeichnung | uppercase}}</h3><br>
+  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}<br>
+  <br><strong>Alkoholgehalt:</strong> {{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰<br>
+  <br><strong>Brautyp:</strong> {{gewProdukt.brautyp}}<br>
+  <br><strong>Füllmenge:</strong> {{gewProdukt.fuellmenge}}<br>
+  <br><strong>Geschmack:</strong> {{gewProdukt.geschmack}}<br>
+  <br><strong>Bittere:</strong> {{gewProdukt.bittere}}<br>
+  <br><strong>Anlass:</strong> {{gewProdukt.anlass}}<br>
+  <br><strong>Zutaten:</strong> {{gewProdukt.zutaten}}<br>
+  <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>
+  <br><div><img src="{{gewProdukt.bildUrl}}" alt="bild"></div>
+
+  <a routerLink="/redirect"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Auswählen</button></a>
+  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Zum Warenkorb</button></a>
+
 </div>
+</form>
+
+
+<router-outlet></router-outlet>
+
+
+

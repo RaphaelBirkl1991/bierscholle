@@ -10,5 +10,5 @@ export interface Produkt {
   anlass: string;
   zutaten: string;
   beschreibung: string;
-  // url: string;
+  bildUrl: string;
 }
