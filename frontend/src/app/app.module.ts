@@ -16,6 +16,8 @@ import {LogInComponent} from "./log-in/log-in.component";
 import { RegistrierenComponent } from './registrieren/registrieren.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
+import { KarteikartenComponent } from './karteikarten/karteikarten.component';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
     RegistrierenComponent,
     WillkommenComponent,
     SchlussseiteComponent,
+    KarteikartenComponent,
+
 
   ],
     imports: [
