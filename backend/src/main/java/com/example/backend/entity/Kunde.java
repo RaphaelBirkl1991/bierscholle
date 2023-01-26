@@ -6,7 +6,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
-@Table(name= "Kundenverzeichnis")
+@Table(name= "Kunden")
 public class Kunde {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,7 +23,10 @@ public class Kunde {
     private String email;
     private String telefonnummer;
 
+    public Kunde() {
+    }
 
+    
     public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email, String telefonnummer) {
         this.vorname = vorname;
         this.nachname = nachname;
@@ -35,6 +38,5 @@ public class Kunde {
         this.telefonnummer = telefonnummer;
     }
 
-    public Kunde() {
-    }
+
 }

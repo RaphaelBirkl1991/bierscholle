@@ -10,13 +10,13 @@ import { WarenkorbComponent } from './warenkorb/warenkorb.component';
 import { KundenListeComponent } from './kunden-liste/kunden-liste.component';
 import { HauptseiteComponent } from './hauptseite/hauptseite.component';
 import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-beschreibung.component';
-import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { StellenangebotComponent } from './stellenangebot/stellenangebot.component';
 import { EuroFormatierungPipe } from './euro-formatierung.pipe';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
 
 @NgModule({
   declarations: [
@@ -27,13 +27,13 @@ import { KontaktComponent } from './kontakt/kontakt.component';
     KundenListeComponent,
     HauptseiteComponent,
     ProduktBeschreibungComponent,
-    KundendatenAnlegenComponent,
     WillkommenComponent,
     StellenangebotComponent,
     EuroFormatierungPipe,
     SchlussseiteComponent,
     UeberUnsComponent,
     KontaktComponent,
+    KaufAbschliessenComponent,
 
   ],
     imports: [
