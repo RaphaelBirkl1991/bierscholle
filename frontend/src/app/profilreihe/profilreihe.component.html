@@ -9,7 +9,9 @@
     <b>{{name}}</b><br>  {{description}}
   </div>
 
-  <a>Anheuern</a>
+<!--  // Funktion addFahrer!-->
+
+  <a *ngIf="keineFahrer" (click)="fs.addFahrer(name,description,img); keineFahrer=false "  >Anheuern</a>
 
 </div>
 

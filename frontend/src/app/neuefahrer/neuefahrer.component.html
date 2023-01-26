@@ -1,9 +1,14 @@
-<div class="standart-card padding-16 fahrerreihe" xmlns:border-radius="http://www.w3.org/1999/xhtml"
-     xmlns:object-fit="http://www.w3.org/1999/xhtml">
+<div class="standart-card padding-16 fahrerreihe" >
 
-<div class = "fahrer" *ngFor="let i of [0,1,2,3]"  >
+  <div *ngIf="fs.names.length === 0 " >
 
-  <img src="{{images[i]}}"  >{{names[i]}}
+    Aktuell keine neuen Fahrer im Pool!
+
+  </div>
+
+<div class = "fahrer" *ngFor="let name of fs.names; let i = index"  >
+
+  <img src="{{fs.images[i]}}"  >{{name}}
 
 </div>
 

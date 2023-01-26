@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FahrerService} from "../fahrer.service";
 
 @Component({
   selector: 'app-neuefahrer',
@@ -7,16 +8,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class NeuefahrerComponent implements OnInit{
 
-  names = ['Sepp','Armin','Sabine','Michael','Hubert'];
-  texts = ['2 Jahre alt','Blablabla','blub bldfdub','bla blaa','Text 345'];
-  images =
-    ['../../assets/Bierfahrerkartei/fahrer1.png.webp',
-      '../../assets/Bierfahrerkartei/spießer1.png.webp',
-      '../../assets/Bierfahrerkartei/fahrer3.png.webp',
-      '../../assets/Bierfahrerkartei/fahrer4.png.webp',
-      '../../assets/Bierfahrerkartei/fahrer5.png.webp'];
 
-  constructor() {
+
+  constructor(public fs: FahrerService) {
   }
 
   ngOnInit() {
