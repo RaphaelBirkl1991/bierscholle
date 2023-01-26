@@ -11,6 +11,7 @@ import {StellenangebotComponent} from "./stellenangebot/stellenangebot.component
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {KontaktComponent} from "./kontakt/kontakt.component";
 import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
+import {KaufBestaetigungComponent} from "./kauf-bestaetigung/kauf-bestaetigung.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'ueber_uns', component: UeberUnsComponent},
   {path:'kontakt', component:KontaktComponent},
   {path: 'kauf_abschliessen', component: KaufAbschliessenComponent},
+  {path: 'kauf_bestaetigung', component: KaufBestaetigungComponent},
 
 
 ];

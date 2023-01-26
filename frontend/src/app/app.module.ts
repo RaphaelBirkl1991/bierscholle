@@ -17,6 +17,7 @@ import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
+import { KaufBestaetigungComponent } from './kauf-bestaetigung/kauf-bestaetigung.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.c
     UeberUnsComponent,
     KontaktComponent,
     KaufAbschliessenComponent,
+    KaufBestaetigungComponent,
 
   ],
     imports: [

@@ -26,7 +26,7 @@ public class Kunde {
     public Kunde() {
     }
 
-    
+
     public Kunde(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort, String email, String telefonnummer) {
         this.vorname = vorname;
         this.nachname = nachname;
