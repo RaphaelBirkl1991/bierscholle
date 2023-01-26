@@ -18,6 +18,7 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
 import { KaufBestaetigungComponent } from './kauf-bestaetigung/kauf-bestaetigung.component';
+import { EmailBestaetigungComponent } from './email-bestaetigung/email-bestaetigung.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { KaufBestaetigungComponent } from './kauf-bestaetigung/kauf-bestaetigung
     KontaktComponent,
     KaufAbschliessenComponent,
     KaufBestaetigungComponent,
+    EmailBestaetigungComponent,
 
   ],
     imports: [

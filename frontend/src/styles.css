@@ -201,4 +201,11 @@ app-kontakt{
   height: 100vh;
 }
 
+app-email-bestaetigung{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIqvLeHhAMMxBeRv1gNLzmIBzPb6abP5h5IA&usqp=CAU");
+  background-size: cover;
+  width: 1300px;
+  height: 900px;
+}
+
 
