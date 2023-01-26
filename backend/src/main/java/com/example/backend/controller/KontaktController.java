@@ -29,7 +29,7 @@ public class KontaktController {
     @PostMapping("api/kontakt_formular")
     public void save(@RequestBody Kontakt kontakt) {
       kontaktRepository.save(new Kontakt(kontakt.getName(), kontakt.getStrasse(), kontakt.getOrt(),
-              kontakt.getEmail(), kontakt.getNachrricht()));
+              kontakt.getEmail(), kontakt.getNachricht()));
     }
 
 }

@@ -14,17 +14,17 @@ public class Kontakt {
     private String strasse;
     private String ort;
     private String email;
-    private  String nachrricht;
+    private  String nachricht;
 
     public Kontakt() {
     }
 
-    public Kontakt(String name, String strasse, String ort, String email, String nachrricht) {
+    public Kontakt(String name, String strasse, String ort, String email, String nachricht) {
         this.name = name;
         this.strasse = strasse;
         this.ort = ort;
         this.email = email;
-        this.nachrricht = nachrricht;
+        this.nachricht = nachricht;
     }
 }
 

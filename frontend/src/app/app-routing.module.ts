@@ -26,6 +26,8 @@ const routes: Routes = [
   {path:'kontakt', component:KontaktComponent},
   {path: 'kauf_abschliessen', component: KaufAbschliessenComponent},
   {path: 'kauf_bestaetigung', component: KaufBestaetigungComponent},
+  {path:'kontakt_formular', component: KontaktComponent}
+
 
 
 ];
