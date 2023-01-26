@@ -12,6 +12,7 @@ import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {KontaktComponent} from "./kontakt/kontakt.component";
 import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
 import {KaufBestaetigungComponent} from "./kauf-bestaetigung/kauf-bestaetigung.component";
+import {EmailBestaetigungComponent} from "./email-bestaetigung/email-bestaetigung.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'kontakt', component:KontaktComponent},
   {path: 'kauf_abschliessen', component: KaufAbschliessenComponent},
   {path: 'kauf_bestaetigung', component: KaufBestaetigungComponent},
-  {path:'kontakt_formular', component: KontaktComponent}
+  {path:'kontakt_formular', component: KontaktComponent},
+  {path:'email_bestaetigung', component: EmailBestaetigungComponent}
 
 
 
