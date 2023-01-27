@@ -12,21 +12,24 @@
 </p>
 <br>
 <h2>Kontaktformular</h2>
-<form>
-  <input name="vorname" type="text"  placeholder="Vorname/Nachname">
+<form class="form">
+  <input name="name" type="text"  [(ngModel)]="neuerKontakt.name"  placeholder="Vorname/Nachname">
   <br>
-  <input name="strasse" type="text"  placeholder="Strasse/Hausnummer">
+  <input name="strasse" type="text" [(ngModel)]="neuerKontakt.strasse" placeholder="Strasse/Hausnummer">
   <br>
-  <input name="plz" type="text"  placeholder="PLZ/Ort">
+  <input name="ort" type="text" [(ngModel)]="neuerKontakt.ort"  placeholder="PLZ/Ort">
   <br>
-  <input name="email" type="text"  placeholder="E-mail">
+  <input name="email" type="text" [(ngModel)]="neuerKontakt.email"  placeholder="E-mail">
   <br>
-  <input name="ihre Nachricht" type="text" placeholder="Ihre Nachricht">
+  <input name="nachricht" type="text" [(ngModel)]="neuerKontakt.nachricht" placeholder="Ihre Nachricht">
   <br>
 
-  <a class="btn" href="mailto:raphael.birkl@gmail.com"><button>Abschicken</button></a>
+<!--  <a routerLink="api/kontakt_formular"><button (click)="save()" type="submit" >Abschicken</button></a>-->
+  <a routerLink="/email_bestaetigung"><button (click)="save()" type="submit" >Senden</button></a>
 
 </form>
+
+<router-outlet></router-outlet>
 
 
 

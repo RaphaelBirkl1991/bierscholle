@@ -5,7 +5,7 @@
 <br>
 <br>
 <a routerLink="/produkt_liste"><em>zurück zu der Bierauswahl :)</em></a>
-<strong><h2>Kundendaten anlagen</h2></strong>
+<strong><h2>Wo soll es hingehen?</h2></strong>
 
 
 
@@ -21,9 +21,10 @@
   <input name="telefonnummer" type="text" [(ngModel)]="neuerKunde.telefonnummer" placeholder="Tel."><br>
 
   <br>
-  <a routerLink=""><button (click)="save()" type="submit" >speichern</button></a>
+  <a routerLink="/kauf_bestaetigung"><button (click)="save()" type="submit" >speichern</button></a>
 
 </form>
 
 <router-outlet></router-outlet>
+
 

@@ -10,7 +10,6 @@ import { WarenkorbComponent } from './warenkorb/warenkorb.component';
 import { KundenListeComponent } from './kunden-liste/kunden-liste.component';
 import { HauptseiteComponent } from './hauptseite/hauptseite.component';
 import { ProduktBeschreibungComponent } from './produkt-beschreibung/produkt-beschreibung.component';
-import { KundendatenAnlegenComponent } from './kundendaten-anlegen/kundendaten-anlegen.component';
 import { WillkommenComponent } from './willkommen/willkommen.component';
 import { StellenangebotComponent } from './stellenangebot/stellenangebot.component';
 import { EuroFormatierungPipe } from './euro-formatierung.pipe';
@@ -19,6 +18,9 @@ import { KarteikartenComponent } from './karteikarten/karteikarten.component';
 
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
+import { KaufBestaetigungComponent } from './kauf-bestaetigung/kauf-bestaetigung.component';
+import { EmailBestaetigungComponent } from './email-bestaetigung/email-bestaetigung.component';
 import { KartenComponent } from './karten/karten.component';
 import { KandidatenComponent } from './kandidaten/kandidaten.component';
 import { ProfilreiheComponent } from './profilreihe/profilreihe.component';
@@ -33,7 +35,6 @@ import { NeuefahrerComponent } from './neuefahrer/neuefahrer.component';
     KundenListeComponent,
     HauptseiteComponent,
     ProduktBeschreibungComponent,
-    KundendatenAnlegenComponent,
     WillkommenComponent,
     StellenangebotComponent,
     EuroFormatierungPipe,
@@ -42,6 +43,9 @@ import { NeuefahrerComponent } from './neuefahrer/neuefahrer.component';
 
     UeberUnsComponent,
     KontaktComponent,
+    KaufAbschliessenComponent,
+    KaufBestaetigungComponent,
+    EmailBestaetigungComponent,
     KartenComponent,
     KandidatenComponent,
     ProfilreiheComponent,

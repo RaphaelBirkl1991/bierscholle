@@ -6,12 +6,14 @@ import {WarenkorbComponent} from "./warenkorb/warenkorb.component";
 import {KundenListeComponent} from "./kunden-liste/kunden-liste.component";
 import {HauptseiteComponent} from "./hauptseite/hauptseite.component";
 import {ProduktBeschreibungComponent} from "./produkt-beschreibung/produkt-beschreibung.component";
-import {KundendatenAnlegenComponent} from "./kundendaten-anlegen/kundendaten-anlegen.component";
 import {WillkommenComponent} from "./willkommen/willkommen.component";
 import {KarteikartenComponent} from "./karteikarten/karteikarten.component";
 import {StellenangebotComponent} from "./stellenangebot/stellenangebot.component";
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
 import {KontaktComponent} from "./kontakt/kontakt.component";
+import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
+import {KaufBestaetigungComponent} from "./kauf-bestaetigung/kauf-bestaetigung.component";
+import {EmailBestaetigungComponent} from "./email-bestaetigung/email-bestaetigung.component";
 
 const routes: Routes = [
   {path: '', component: HauptseiteComponent},
@@ -20,13 +22,17 @@ const routes: Routes = [
   {path: 'warenkorb', component: WarenkorbComponent},
   {path: 'kunden_liste', component: KundenListeComponent},
   {path: 'produkt_beschreibung', component: ProduktBeschreibungComponent},
-  {path: 'kundendaten_anlegen', component: KundendatenAnlegenComponent},
   {path: 'willkommen', component: WillkommenComponent},
   {path: 'kopfzeile', component:KopfzeileComponent},
   {path: 'karteikarten', component:KarteikartenComponent},
   {path: 'stellenangebot', component: StellenangebotComponent},
   {path: 'ueber_uns', component: UeberUnsComponent},
-  {path:'kontakt', component:KontaktComponent}
+  {path:'kontakt', component:KontaktComponent},
+  {path: 'kauf_abschliessen', component: KaufAbschliessenComponent},
+  {path: 'kauf_bestaetigung', component: KaufBestaetigungComponent},
+  {path:'kontakt_formular', component: KontaktComponent},
+  {path:'email_bestaetigung', component: EmailBestaetigungComponent}
+
 
 
 ];

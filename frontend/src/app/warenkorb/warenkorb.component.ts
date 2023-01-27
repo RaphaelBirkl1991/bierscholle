@@ -25,8 +25,11 @@ export class WarenkorbComponent implements OnInit{
       let summe = 0;
 
       for (let warenkorb of this.warenkorbe) {
-        summe += warenkorb.preis;     }
-      return summe;   }
+        summe += warenkorb.preis;}
+      return summe;
+     // location.reload();
+  }
+
 
 
   loeschen(){
