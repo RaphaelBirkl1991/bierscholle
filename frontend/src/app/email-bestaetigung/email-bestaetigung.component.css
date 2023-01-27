@@ -1,0 +1,12 @@
+h1, h4 {
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+}
+.bg-img {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-oktoberfest-beer-background-vector-illustration-with-wheat-a-bottle-of-image_290547.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 310%;
+  height: 100vh;
+}
+
