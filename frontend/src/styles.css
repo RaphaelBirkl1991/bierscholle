@@ -181,7 +181,7 @@ button:hover{
   text-decoration: none;
 }
 
-app-warenkorb {
+.warenkorb {
   opacity: 0.7;
   /*text-align: center;*/
   /*background-image: url("bilder/Foto1.jpg");*/
