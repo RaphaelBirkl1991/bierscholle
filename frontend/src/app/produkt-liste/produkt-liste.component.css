@@ -23,4 +23,13 @@
 img{
   width: 7%;
   height: 13%;
+  /*float: right;*/
+  /*margin-right:700px;*/
+  /*margin-bottom: 800px;*/
+  align-self: flex-start;
+}
+
+imgDiv{
+  show-right: 500px;
+  float: right;
 }
