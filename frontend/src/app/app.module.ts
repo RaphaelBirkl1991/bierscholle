@@ -14,11 +14,17 @@ import { WillkommenComponent } from './willkommen/willkommen.component';
 import { StellenangebotComponent } from './stellenangebot/stellenangebot.component';
 import { EuroFormatierungPipe } from './euro-formatierung.pipe';
 import { SchlussseiteComponent } from './schlussseite/schlussseite.component';
+import { KarteikartenComponent } from './karteikarten/karteikarten.component';
+
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import {KaufAbschliessenComponent} from "./kauf-abschliessen/kauf-abschliessen.component";
 import { KaufBestaetigungComponent } from './kauf-bestaetigung/kauf-bestaetigung.component';
 import { EmailBestaetigungComponent } from './email-bestaetigung/email-bestaetigung.component';
+import { KartenComponent } from './karten/karten.component';
+import { KandidatenComponent } from './kandidaten/kandidaten.component';
+import { ProfilreiheComponent } from './profilreihe/profilreihe.component';
+import { NeuefahrerComponent } from './neuefahrer/neuefahrer.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +39,17 @@ import { EmailBestaetigungComponent } from './email-bestaetigung/email-bestaetig
     StellenangebotComponent,
     EuroFormatierungPipe,
     SchlussseiteComponent,
+    KarteikartenComponent,
+
     UeberUnsComponent,
     KontaktComponent,
     KaufAbschliessenComponent,
     KaufBestaetigungComponent,
     EmailBestaetigungComponent,
+    KartenComponent,
+    KandidatenComponent,
+    ProfilreiheComponent,
+    NeuefahrerComponent,
 
   ],
     imports: [

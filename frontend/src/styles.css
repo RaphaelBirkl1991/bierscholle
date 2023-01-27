@@ -201,6 +201,56 @@ app-kontakt{
   height: 100vh;
 }
 
+.container1{
+
+
+  padding-top: 100px;
+  margin-right: 45px;
+
+
+}
+
+.flexrow {
+  display: flex;
+  justify-content:center ;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+.card{
+  min-height: 550px;
+  background-color: white;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.padding-16{
+
+  padding: 16px;
+
+}
+
+.standart-card {
+
+  background-color: white;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+
+}
+
+body{
+  margin: 0;
+}
+
+
 app-email-bestaetigung{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIqvLeHhAMMxBeRv1gNLzmIBzPb6abP5h5IA&usqp=CAU");
   background-size: cover;

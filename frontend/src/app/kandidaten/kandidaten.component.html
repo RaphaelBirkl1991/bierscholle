@@ -1,0 +1,12 @@
+
+
+<app-profilreihe [keineFahrer]="false" ></app-profilreihe>
+
+<div class="margin-bottom-16" >
+
+  <b>Chef</b>
+
+</div>
+
+
+<app-profilreihe *ngFor="let i of [0,1,2,3,4]" [name]="names[i]" [description]="texts[i]" [img]="images[i]" ></app-profilreihe>

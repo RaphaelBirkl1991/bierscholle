@@ -1,0 +1,15 @@
+<div class="standart-card padding-16 fahrerreihe" >
+
+  <div *ngIf="fs.names.length === 0 " >
+
+    Aktuell keine neuen Fahrer im Pool!
+
+  </div>
+
+<div class = "fahrer" *ngFor="let name of fs.names; let i = index"  >
+
+  <img src="{{fs.images[i]}}"  >{{name}}
+
+</div>
+
+</div>
