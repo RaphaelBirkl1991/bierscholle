@@ -1,12 +1,12 @@
-<br>
-<a [routerLink]="['']">
-  <em>zurück zur Bierscholle</em>
-</a>
-<br>
+<!--<br>-->
+<!--<a [routerLink]="['']">-->
+<!--  <em>zurück zur Bierscholle</em>-->
+<!--</a>-->
+<!--<br>-->
 
 
 
-<h2>Biersorten:</h2>
+<h2>Bierauswahl:</h2>
 <div class="tile-container">
   <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br><br>
 
