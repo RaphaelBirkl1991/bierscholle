@@ -1,5 +1,6 @@
 <div class="bg-img">
 <h1>Kontakt</h1>
+
 <br>
 <h2>Haben Sie eine Frage?</h2>
 <p>
@@ -22,7 +23,12 @@
   <br>
   <input name="email" type="text" [(ngModel)]="neuerKontakt.email"  placeholder="E-mail">
   <br>
-  <input name="nachricht" type="text" [(ngModel)]="neuerKontakt.nachricht" placeholder="Ihre Nachricht">
+  <div class="form-group">
+    <textarea name= "nachricht" class="form-control"
+      [(ngModel)]="neuerKontakt.nachricht" placeholder="Ihre Nachricht">
+    </textarea>
+  </div>
+<!--  <input name="nachricht" type="text" [(ngModel)]="neuerKontakt.nachricht" placeholder="Ihre Nachricht">-->
   <br>
 
 <!--  <a routerLink="api/kontakt_formular"><button (click)="save()" type="submit" >Abschicken</button></a>-->
@@ -30,11 +36,9 @@
 
 </form>
 <!--<img class="bg" src="http://www.physio-heuer.com/wp-content/uploads/2021/12/photo-1546387903-6d82d96ccca6.jpeg" alt="HintergrundFoto">-->
-
-<router-outlet></router-outlet>
-
 </div>
-
+<router-outlet></router-outlet>
 
 
 <!--<img class="get in touch" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT54m1PfvJr7lGneT2p4JyrUBWBu4DBCDsT_Q&usqp=CAU" alt="get in touch">-->
+

@@ -1,9 +1,78 @@
-h2{
+/*h2{*/
+/*  text-align: center;*/
+/*}*/
+/*p{*/
+/*  text-align: center;*/
+/*  border-radius: 4px;*/
+/*  margin: 50px;*/
+/*}*/
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
-p{
-  text-align: center;
-  border-radius: 4px;
-  margin: 50px;
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+/* Add class styles */
+/*.intro {*/
+/*  background-color: #f2f2f2;*/
+/*  padding: 20px;*/
+/*  border-radius: 10px;*/
+/*}*/
+.intro {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+.ueberuns {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+.lieferung {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+.unterwegs {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Add image styles */
+/*img {*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+
+img {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  margin: 0 auto;
 }
 
