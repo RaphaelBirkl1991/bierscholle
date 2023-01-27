@@ -11,3 +11,30 @@ h1,h2,p,form{
   background-repeat: no-repeat;
 }
 
+button{
+  /*background: #11cdd4;*/
+  background: lightskyblue;
+  /*background-image: -webkit-linear-gradient(top, lightskyblue, #11999e);*/
+  background-image: -webkit-linear-gradient(top, lightskyblue, lightskyblue);
+  background-image: -moz-linear-gradient(top, lightskyblue, lightskyblue);
+  background-image: -ms-linear-gradient(top, lightskyblue, lightskyblue);
+  background-image: -o-linear-gradient(top, lightskyblue, lightskyblue);
+  background-image: linear-gradient(to bottom, lightskyblue, lightskyblue);
+  /*-webkit-border-radius: 8;*/
+  /*-moz-border-radius: 8;*/
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+button:hover{
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
