@@ -1,56 +1,101 @@
-<br>
-<a [routerLink]="['']">
-  <em>zurück zur Bierscholle</em>
-</a>
-<br>
+
+
+<!--<h2>Biersorten:</h2>-->
+<!--<div class="tile-container">-->
+<!--  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br><br>-->
+
+<!--    <a [routerLink]="['api/produkt_sortiment', produkt.id]" ></a>-->
+<!--    <a class="blue" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></a>-->
+
+<!--  </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+
+
+
+
+
+<!--<form>-->
+<!--<div *ngIf="gewProdukt">-->
+<!--  <h3> {{gewProdukt.bezeichnung | uppercase}}</h3><br>-->
+<!--  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}<br>-->
+<!--  <br><strong>Alkoholgehalt:</strong> {{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰<br>-->
+<!--  <br><strong>Brautyp:</strong> {{gewProdukt.brautyp}}<br>-->
+<!--  <br><strong>Füllmenge:</strong> {{gewProdukt.fuellmenge}}<br>-->
+<!--  <br><strong>Geschmack:</strong> {{gewProdukt.geschmack}}<br>-->
+<!--  <br><strong>Bittere:</strong> {{gewProdukt.bittere}}<br>-->
+<!--  <br><strong>Anlass:</strong> {{gewProdukt.anlass}}<br>-->
+<!--  <br><strong>Zutaten:</strong> {{gewProdukt.zutaten}}<br>-->
+<!--  <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>-->
+<!--  <br><div class="bierflasche"><img  src="{{gewProdukt.bildUrl}}" alt="bild"></div>-->
+
+<!--  <a routerLink="/redirect"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Auswählen</button></a>-->
+<!--  <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Zum Warenkorb</button></a>-->
+
+<!--</div>-->
+<!--</form>-->
+
+
+<!--<router-outlet></router-outlet>-->
+
+
+
+<a [routerLink]="['api/produkt_sortiment', produkt.id]" (click)="onSelect(produkt)">{{produkt.bezeichnung}}</a>
 
 
 
 <h2>Biersorten:</h2>
 <div class="tile-container">
-  <div *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]"><br><br>
-
-    <a [routerLink]="['api/produkt_sortiment', produkt.id]">
-      <img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)" alt="Foto">
-    </a>
-
-
-
-    <!--    <button type="button" class="button"></button>-->
-<!--    <a><button><img src="{{produkt.bildUrl}}" (click)="onSelect(produkt)")></button></a>-->
-<!--    <button type="button" class="tile-button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
-<!--    <button type="button" [innerText]="produkt.bezeichnung" (click)="onSelect(produkt)"></button>-->
-  </div>
+  <ol *ngFor="let produkt of produkte" [routerLink]="['api/produkt_sortiment', produkt.id]">
+    <em><a [routerLink]="['api/produkt_sortiment', produkt.id]" (click)="onSelect(produkt)">{{produkt.bezeichnung}}</a></em>
+  </ol>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br><br>
 
-
-<form>
 <div *ngIf="gewProdukt">
-  <h3> {{gewProdukt.bezeichnung | uppercase}}</h3><br>
-  <br><strong>Preis:</strong> {{gewProdukt.preis | currency: ' € '}}<br>
-  <br><strong>Alkoholgehalt:</strong> {{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰<br>
-  <br><strong>Brautyp:</strong> {{gewProdukt.brautyp}}<br>
-  <br><strong>Füllmenge:</strong> {{gewProdukt.fuellmenge}}<br>
-  <br><strong>Geschmack:</strong> {{gewProdukt.geschmack}}<br>
-  <br><strong>Bittere:</strong> {{gewProdukt.bittere}}<br>
-  <br><strong>Anlass:</strong> {{gewProdukt.anlass}}<br>
-  <br><strong>Zutaten:</strong> {{gewProdukt.zutaten}}<br>
-  <br><strong>Beschreibung:</strong> {{gewProdukt.beschreibung}}<br>
-  <br><div><img src="{{gewProdukt.bildUrl}}" alt="bild"></div>
 
+  <strong>{{gewProdukt.bezeichnung | uppercase}}</strong><br><br><br><br>
+  {{gewProdukt.beschreibung}}<br><br>
+  <strong>Anlass: </strong> {{gewProdukt.anlass}}
+  <br><br>
+  <strong>Geschmack: </strong>{{gewProdukt.geschmack}}
+  <br><br><br>
+
+  <table>
+
+
+    <tr>
+      <td><strong>Preis:</strong></td> <td>{{gewProdukt.preis | euroFormatierung}}</td>
+      </tr>
+
+    <tr>
+      <td><strong>Alc.:</strong></td> <td>{{gewProdukt.alkoholgehalt |number:'.0-2'}} ‰</td>
+      </tr>
+
+    <tr>
+      <td><strong>Brautyp:</strong></td> <td>{{gewProdukt.brautyp}}</td>
+    </tr>
+
+     <tr>
+       <td><strong>Füllmenge:</strong></td> <td>{{gewProdukt.fuellmenge}}</td>
+    </tr>
+
+    <tr>
+    <td><strong>Bittere:</strong> </td> <td>{{gewProdukt.bittere}}</td>
+    </tr>
+
+    <tr>
+      <td><strong>Zutaten:</strong> </td> <td>{{gewProdukt.zutaten}}</td>
+    </tr>
+
+  </table>
+  <br><img  src="{{gewProdukt.bildUrl}}" alt="bild">
+  <br>
   <a routerLink="/redirect"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Auswählen</button></a>
   <a routerLink="/warenkorb"><button (click)="save(gewProdukt.bezeichnung, gewProdukt.preis)" type="submit">Zum Warenkorb</button></a>
-
 </div>
-</form>
-
-
 <router-outlet></router-outlet>
-
-
-

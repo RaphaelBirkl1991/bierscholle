@@ -209,3 +209,11 @@ app-email-bestaetigung{
 }
 
 
+.app-produkt-liste, .bierflasche{
+
+  height: 50px;
+  width: auto;
+}
+
+
+

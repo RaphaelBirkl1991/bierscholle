@@ -70,7 +70,7 @@ public class BackendApplication {
                     "in weltlicher Abgeschiedenheit. Hier haben die Scheyerner Klosterbiere ihre Wurzeln. Sie stehen auch für die " +
                     "Güte ihrer überregional angebotenen Biere der Marke Kloster Scheyern ein, die bei der Tucher Privatbrauerei nach speziellen " +
                     "Vorgaben und mit Gottes Segen in Lizenz produziert werden. Überlieferte Rezepturen und ausgewählte Zugaben bürgen für den authentischen " +
-                    "Geschmack und höchste Qualität.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "Geschmack und höchste Qualität.", "https://www.klosterbrauerei-scheyern.de/wp-content/uploads/sites/2/2020/11/Kloster_Scheyern_Gold-Hell_05l.png");
 
             produktRepository.save(klostergoldHell);
 
@@ -78,7 +78,7 @@ public class BackendApplication {
             Produkt augustinerEdelstoff = new Produkt("Augustiner Edelstoff", 22.10, 3.8, "Vollbier", 0.5, "Hopfig bis malzig", "kaum wahrnehmbare Bittere ", "Sommerfest, gesellige Runde, Frühschoppen", "Wasser, Gerstenmalz, Hopfen", "Der Edelstoff steht klar mit einem satten Gelb" +
                     " im Glas und ein Duft nach Honig und zitrusartigen Orangennoten erfreuen die Nase. Weich im Antrunk, entwickelt er seinen erfrischenden " +
                     "Charakter auf der Zunge mit fein säuerlichen Hopfennoten, die die grundlegende Malzaromatik sogar noch hervorheben, ohne dass das Export " +
-                    "seinen Charakter verliert. Ein elegantes und würziges Export", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "seinen Charakter verliert. Ein elegantes und würziges Export", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/aa3a7ef8-bc89-4468-9538-3a4a1f05d4b9");
 
             produktRepository.save(augustinerEdelstoff);
 
@@ -86,7 +86,7 @@ public class BackendApplication {
             Produkt jaegerbierFreising = new Produkt("Hofbrauhaus Freising Jägerbier", 18.60, 4.7, "Vollbier", 0.5, "Biskuit, Getreide, Zitrusnote ", "mild, dezent bitter", "Feierabend, TV Abend, Frühschoppen ",
                     "Wasser, Gerstenmalz, Hopfen", "Ein sehr ausbalanciertes helles Exportbier auf Höchststufe." +
                     " Leuchtend gelb mit einer beeindruckenden Schaumkrone umspielt ein schöner Duft nach frischem Brot und süßem Honig die Nase. Im Geschmack liegt der " +
-                    "Schwerpunkt deutlich auf einem wunderbar facettenreich gestaltetem Malzkörper. Das lebendige Finish ist elegant und wenig Hopfenbitter. ", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "Schwerpunkt deutlich auf einem wunderbar facettenreich gestaltetem Malzkörper. Das lebendige Finish ist elegant und wenig Hopfenbitter. ", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/6e8a00b4-07bb-4485-b31d-7599d38ff6d2");
 
             produktRepository.save(jaegerbierFreising);
 
@@ -94,7 +94,7 @@ public class BackendApplication {
             Produkt alpirsbacherKlosterDunkel = new Produkt("Alpirsbacher Kloster Dunkel", 23.00, 5.2, "Vollbier", 0.5, "Karamell, Röstbittere, Nuss",
                     "angenehme Röstmalzbittere", "Grillen, Seele baumeln lassen, Kamingespräch", " Wasser, Gerstenmalz, Hopfen", "Etwas flüchtig zeigt sich der mittelporig und anhaftende Schaum." +
                     " Um so kräftiger strahlt das glanzfeine Kastanienbraun aus dem Glase. Deutliche Karamellnoten gepaart mit Röstaromen sowie Vanille und Schokolade." +
-                    " Der Antrunk ruht in sich. Die Aromen von Karamell wiederholen sich mit nussigen Anklängen und einer Röstbittere, die auch den Nachtrunk dominiert. ", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    " Der Antrunk ruht in sich. Die Aromen von Karamell wiederholen sich mit nussigen Anklängen und einer Röstbittere, die auch den Nachtrunk dominiert. ", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/ba3267d5-0142-4d4b-b6d5-8490d1439266");
 
             produktRepository.save(alpirsbacherKlosterDunkel);
 
@@ -102,7 +102,7 @@ public class BackendApplication {
             Produkt weltenburgerKlosterHefe = new Produkt("Weltenburger Kloster Hefe", 20.00, 5.4, "Vollbier", 0.5, "Banane, Zitrone, Gewürznelke", "kaum Bittere zu schmecken", "Sommerfest, gesellige Runde, Party",
                     "Wasser, Gerstenmalz, Hopfen", "Die kompakte helle Schaumkrone und die hefetrübe goldgelbe Farbe" +
                     " erfreuen das Auge. Ein fruchtiger Geruch mit Noten von Banane und Gewürznelken kitzelt die Nase bevor das Bier in einem erfrischenden milden Antrunk mit Noten von Banane," +
-                    " Zitrone und Gewürznelke die Zunge berührt. Malzigsüße und hefefruchtige Akzente von Banane, und Toastbrot werden zum Abgang unterlegt von einer zitronig-frischen Hopfennote.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    " Zitrone und Gewürznelke die Zunge berührt. Malzigsüße und hefefruchtige Akzente von Banane, und Toastbrot werden zum Abgang unterlegt von einer zitronig-frischen Hopfennote.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/4d3c9923-d8c4-4d80-8fac-1a90212cf9c0");
 
             produktRepository.save(weltenburgerKlosterHefe);
 
@@ -112,7 +112,7 @@ public class BackendApplication {
                     "Optik und einem porigen, anhaftenden Schaum lädt der Schorndorfer Treibstoff zum Trinken ein. Dezente Malzaromen, unterlegt mit einer fruchtigen Note nach Quitte, steigen" +
                     " zusammen mit süßen Honigtönen in die Nase. Der Antrunk ist mild und fein moussierend und lässt den Aromen im Mund allen Platz, sich zu entfalten. Diese sind geprägt durch" +
                     " leicht süßliche Noten nach Blütenhonig sowie Töne nach frisch gebackenem Weißbrot. Eine hopfenbasierte Zitrusaromatik rundet das Bier ab, das mit einer sehr dezenten Bittere " +
-                    "langsam ausklingt.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "langsam ausklingt.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/0df1ed8e-5e9f-4577-b5b8-09c46fb51454");
 
             produktRepository.save(schorndorferTreibstoff);
 
@@ -121,7 +121,7 @@ public class BackendApplication {
                     "dezent, gut eingebunden", "Picknick, gesellige Runde, Frühschoppen", "Wasser, Hopfen, Gerstenmalz", "Optisch imponiert das Weißbier mit einem schönen weißen Schaum," +
                     " der lange anhält. In der Nase spielen Aromen von frischer Hefe, Weissbrot, etwas Nelke und blumige Töne. Sehr spritzig und schlank macht es beim Trinken durch das CO2 einen leicht" +
                     " säuerlichen Eindruck, der schön durch milde getreidige und nelkenartige Noten ergänzt wird. Auch der Hopfen kommt schön zum Vorschein und gibt Struktur. Die typischen Fruchtaromen" +
-                    " bleiben sehr dezent.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    " bleiben sehr dezent.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/df97183d-14b8-4866-9090-c65804223e90");
 
             produktRepository.save(zwiefalterKloster);
 //
@@ -131,7 +131,7 @@ public class BackendApplication {
                     "Dieses Rotbier weist neben seiner schönen, klaren Kupferfarbe und dem feinporigen Schaum eine kräftige" + " Malzaromatik nach Karamellbonbon und Zartbitterschokolade auf. Weich im Antrunk, verteilt sich dieses Rotbier" +
                             " cremig auf der Zunge und erfreut mit seinen herrlich schokoladigen Tönen, abgerundet durch einen Strauß " +
                             "verschiedener Trocken- und Rumtopffrüchte und dem angenehmen Hauch von Kandiszucker. Auch die feine Röstbittere" +
-                            " am Ende ist wahrnehmbar und bildet einen sehr guten Ausgleich zu der malzigen Süße.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                            " am Ende ist wahrnehmbar und bildet einen sehr guten Ausgleich zu der malzigen Süße.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/a18888f4-d939-463a-9efe-2a6ea30879df");
 
             produktRepository.save(gansbraeu);
 
@@ -140,7 +140,7 @@ public class BackendApplication {
                     "sehr dezente Bittere, leicht nachklingend", "gesellige Runde, Hochzeit, Seele baumeln lassen", "Hopfen, Gerstenmalz, Wasser", "Der helle Bergbock der Klosterbrauerei Andechs ist ein Bier, welches seinen Alkoholgehalt" +
                     " nicht versteckt. Goldgelb und klar leuchtete es im Glas. Der Schaum verschwindet schnell und kleine, feine Bläschen steigen auf. Orange, etwas Mandel und auch der Alkohol melden sich " +
                     "in der Nase und der erste Schluck ist Honigsüß. Getoastetes Brot, Heu und wieder eine deutliche Alkohlnote machen diesen Bock etwas kantig. Eine feine Perlage umspielt die Zunge und der " +
-                    "kräftige Körper trägt die Restsüße wunderbar zum nächsten Schluck.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "kräftige Körper trägt die Restsüße wunderbar zum nächsten Schluck.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/ee6c472f-36fa-4f0f-9471-1e0679062906");
 
             produktRepository.save(andechserBergbock);
 
@@ -148,7 +148,7 @@ public class BackendApplication {
             Produkt aktienLandbier = new Produkt("Aktien Landbier fränkisch Dunkel", 20.00, 5.3, "Vollbier", 0.5, "Röstmalz, Karamell, etwas dunkle Schokolade", "etwas nachklingende Röstmalzbirne", "Picknick, erstes Date, Kindergeburtstag",
                     "Hopfen, Malz, Wasser", "Das Bayreuther Aktien Landbier Dunkel ist ein wunderbar klar braun leuchtendes " +
                     "Bier mit einer tollen, stabilen beigen Schaumkrone. Der Geruch ist röstig, nach dunklem Brot und etwas süß nach Karamell. Der Antrunk bestätigt die Nase nach Röstmalz, etwas süßem Karamell" +
-                    " und dazu dunkle Schokolade. Der Eindruck ist mild und die Kohlensäure erfrischt und eine feine Bittere klingt etwas nach. ", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    " und dazu dunkle Schokolade. Der Eindruck ist mild und die Kohlensäure erfrischt und eine feine Bittere klingt etwas nach. ", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/aad4edd9-6ed8-453b-bf58-80d14f65c14f");
 
             produktRepository.save(aktienLandbier);
 
@@ -156,14 +156,14 @@ public class BackendApplication {
             Produkt schoenbusch = new Produkt("Schönbusch Horst Hell", 21.50, 5.0, "Vollbier", 0.5, "Röstmalze, Bananenbrot mit Kürbis", "dezent-vollmundig", "Kommunion, Kantine", "Hopfen, Malz, Wasser", "Spannender Name für ein Bier! Da ist man doch umso mehr gespannt, wie es schmeckt! Das helle Lagerbier " +
                     "der Schönbuch Braumanufaktur aus Böblingen hat eine glanzfeine, satte goldgelbe Farbe und bildet einen schneeweißen und feinporigen Schaum aus. Ganz dem Stil gerecht ist die Aromatik in der" +
                     " Nase sehr mild und besticht mit aromatischen Malznoten nach Getreide. Nach einem erfrischenden und moussierenden Antrunk findet sich ein milder, angenehmer Malzkörper mit frischen floralen " +
-                    "Hopfenakzenten im Mund wieder und unterstützt den leichten Charakter des Bieres. Ausgewogen und mit einer dezenten Herbe klingt das Bier aus.", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                    "Hopfenakzenten im Mund wieder und unterstützt den leichten Charakter des Bieres. Ausgewogen und mit einer dezenten Herbe klingt das Bier aus.", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/5661b93c-58ea-42f9-b0d0-2f7eca18f52d");
 
             produktRepository.save(schoenbusch);
 
             Produkt mayersBrauwerk = new Produkt("Mayers Brauwerk Schiller", 20.00, 4.8, "Vollbier", 0.5, "Leichtes Hopfenaroma mir Lemon-Squeezy", "stark bitter", "Notartermin, beim Programmieren, Zahnarztbesuch", "Hopfen, Gerstenmalz, Wasser",
                     "Das Bier mit seinem hellen Bernsteinton wird im Licht mit goldenen Reflexen durchzogen. " +
                             "Es bildet sich cremefarbener Schaum, der sich an den leuchtenden Körper schmiegt. Karamellige Malznoten mit süßlich-weichen Komponenten nach Sahnekaramell und Kandiszucker eröffnen den" +
-                            " Haupttrunk. Der vollmundige und sanfte Körper wirkt durch die feinperlige Kohlensäure erfrischend. Die Bittere ist gut eingebettet und klingt langsam bis zum Abgang aus. ", "https://www.manfreddo.com/storage/supplier/100238/products/113799_05_10_2017_13_10_975.jpg");
+                            " Haupttrunk. Der vollmundige und sanfte Körper wirkt durch die feinperlige Kohlensäure erfrischend. Die Bittere ist gut eingebettet und klingt langsam bis zum Abgang aus. ", "https://gefako-bierentdecker-m1webservice.azurewebsites.net/Images/Article/medium/3a570fbc-3681-447d-840d-ce70a9b1bcb9");
 
             produktRepository.save(mayersBrauwerk);
 
