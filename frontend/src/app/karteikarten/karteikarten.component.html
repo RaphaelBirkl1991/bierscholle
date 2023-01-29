@@ -1,4 +1,4 @@
-
+<div class="Bierfahrerpage">
 <br>
 <a [routerLink]="['']">
   <em>zurück zur Bierscholle</em>
@@ -9,7 +9,7 @@
 
 <header>
 
-  <img src="../../assets/Bierfahrerkartei/BierLogo.png.webp" width="500px" height="500px">
+  <img src="../../assets/Bierfahrerkartei/BierLogo.png.webp" width="250px" height="250px">
 
 
 </header>
@@ -25,7 +25,7 @@
 
 
 
-  <app-karten *ngFor="let i of [0, 1, 2, 3, 4]" [bilder]="BierBilder[i]"  [text]= "Biertexte[i]"></app-karten>
+  <app-karten *ngFor="let i of [0, 1]" [bilder]="BierBilder[i]"  [text]= "Biertexte[i]"></app-karten>
 
 
 
@@ -36,3 +36,4 @@
 
 </body>
 
+</div>

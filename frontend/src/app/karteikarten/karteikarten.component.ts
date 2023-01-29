@@ -9,20 +9,19 @@ export class KarteikartenComponent {
 
   Biertexte = [
 
-    'text 1',
-    'text 2',
-    'text 3',
-    'text 4',
-    'text 5',
+    'Der Sepp, Bierfahrer seit 2001. Erst 8 Auffahrunfälle. Kommt immer öfter pünktlich mittlerweile. Hat immer einen ' +
+    'Stammplatz im Löwenbräuzelt auf dem Oktoberfest. Also einer unserer Besten. ',
+    'Der Heino liebt sein Astra und isst dazu auch gerne Labskaus.Gibt seinen Lohn meist nach ein paar' +
+    'Tagen auf der Reeperbahn aus, das macht ihn ziemlich fleissig. ',
+
 
   ];
 
   BierBilder = [
     '../../assets/Bierfahrerkartei/fahrer1.png.webp',
-    '../../assets/Bierfahrerkartei/fahrer2png.webp',
     '../../assets/Bierfahrerkartei/fahrer3.png.webp',
-    '../../assets/Bierfahrerkartei/fahrer4.png.webp',
-    '../../assets/Bierfahrerkartei/fahrer5.png.webp',
+
+
 
   ];
 

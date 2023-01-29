@@ -7,9 +7,9 @@ import {FahrerService} from "../fahrer.service";
   styleUrls: ['./profilreihe.component.css']
 })
 export class ProfilreiheComponent implements OnInit{
-  @Input() name = 'Sepp';
-  @Input() img = '../../assets/Bierfahrerkartei/spießer1.png.webp';
-  @Input() description = '3 Jahre alt';
+  @Input() name = 'Herr Dr. Biermeier';
+  @Input() img = '../../assets/Bierfahrerkartei/Personalchef.png.webp';
+  @Input() description = 'Bier ist sein Leben';
   @Input() keineFahrer = true; // Standartmäßig auf True wenn kein Fahrer gemeldet ist
 
 

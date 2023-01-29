@@ -7,14 +7,34 @@ import {Component, OnInit} from '@angular/core';
 })
 export class KandidatenComponent implements OnInit{
 
-  names = ['Sepp','Armin','Sabine','Michael','Hubert'];
-  texts = ['2 Jahre alt','Blablabla','blub bldfdub','bla blaa','Text 345'];
+  names =
+    ['Sepp ',
+      'Aal-Anton'
+      , 'Ulla'
+      , 'BWL-Justus'
+      , 'Kevin'
+      , 'Hans-Albers'
+      , 'Klaus'];
+  texts =
+    ['Ihm kommt nur Weißbier ins Haus!',
+    'Legt bei jeder Bestellung noch einen Aal dazu!',
+    'Verschüttet niemals ihr Bier!',
+    'Seine Papa ist Anwalt.'
+    , 'Ist halt son richtiger Kevin',
+    "Isst sein Fischbrötchen an der Waterkant",
+      'Dreht gerne Sicherheitsvideos bei der Arbeit'
+
+    ];
   images =
-    ['../../assets/Bierfahrerkartei/fahrer1.png.webp',
-      '../../assets/Bierfahrerkartei/spießer1.png.webp',
-      '../../assets/Bierfahrerkartei/fahrer3.png.webp',
+    ['../../assets/Bierfahrerkartei/fahrer2png.webp',
       '../../assets/Bierfahrerkartei/fahrer4.png.webp',
-      '../../assets/Bierfahrerkartei/fahrer5.png.webp'];
+      '../../assets/Bierfahrerkartei/fahrer5.png.webp',
+      '../../assets/Bierfahrerkartei/spießer1.png.webp',
+      '../../assets/Bierfahrerkartei/spießer3.png.webp',
+      '../../assets/Bierfahrerkartei/fahrer10.png.webp',
+      '../../assets/Bierfahrerkartei/Klaus.jpg',
+
+    ];
 
 
   constructor() {

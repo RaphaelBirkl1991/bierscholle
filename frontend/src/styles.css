@@ -191,6 +191,7 @@ app-warenkorb {
   width: 700px;
   height: 500px;
   /*text-align: left;*/
+  background-color:lightyellow;
 }
 
 
@@ -246,9 +247,7 @@ app-kontakt{
 
 }
 
-body{
-  margin: 0;
-}
+
 
 
 app-email-bestaetigung{
