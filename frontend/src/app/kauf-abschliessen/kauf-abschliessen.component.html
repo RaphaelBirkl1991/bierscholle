@@ -1,15 +1,16 @@
+<div class="bg-img">
 <br>
 <a [routerLink]="['']">
   <em>zurück zur Bierscholle</em>
 </a>
 <br>
 <br>
-<a routerLink="/produkt_liste"><em>zurück zu der Bierauswahl :)</em></a>
+<!--<a routerLink="/produkt_liste"><em>zurück zu der Bierauswahl :)</em></a>-->
 <strong><h2>Wo soll es hingehen?</h2></strong>
 
 
 
-<form>
+<form class="form">
 
   <input name="vorname" type="text" [(ngModel)]="neuerKunde.vorname" placeholder="Vorname">
   <input name="nachname" type="text" [(ngModel)]="neuerKunde.nachname" placeholder="Nachname"><br>
@@ -25,6 +26,7 @@
 
 </form>
 
+</div>
 <router-outlet></router-outlet>
 
 
