@@ -35,7 +35,7 @@ export class ProduktListeComponent implements OnInit{
   save(bezeichnung: string, preis: number) {
     this.neuerWarenkorb = { produktbezeichnung: bezeichnung, preis: preis };
     this.http.post<Produkt>('api/warenkorb_einfuegen', this.neuerWarenkorb).subscribe();
-    window.alert('Der gewünschte Artikel liegt schon in deinem Warenkorb')
+    window.alert('Der gewünschte Artikel liegt in deinem Warenkorb')
   }
 
 }
