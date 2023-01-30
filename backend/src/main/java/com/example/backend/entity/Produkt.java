@@ -15,7 +15,7 @@ public class Produkt {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private int anzahl;
+//    private int anzahl;
     private String bezeichnung;
     private double preis;
     private double alkoholgehalt;
@@ -50,7 +50,6 @@ public class Produkt {
         this.anlass = anlass;
         this.zutaten = zutaten;
         this.beschreibung = beschreibung;
-        this.warenkorb = warenkorb;
         this.bildUrl = bildUrl;
     }
 
