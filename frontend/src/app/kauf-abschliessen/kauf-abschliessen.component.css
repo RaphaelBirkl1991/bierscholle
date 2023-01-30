@@ -1,5 +1,5 @@
 .bg-img{
-  background-image: url("https://img.freepik.com/fotos-kostenlos/leckere-amerikanische-bierzusammensetzung_23-2148907577.jpg?w=2000");
+  background-image: url("https://images8.alphacoders.com/413/413078.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 385%;
@@ -9,4 +9,7 @@
 h2,form{
   text-align: center;
   margin-top: 95px;
+}
+h2{
+  color: #f2f2f2;
 }
