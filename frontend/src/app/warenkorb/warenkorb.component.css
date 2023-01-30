@@ -10,3 +10,13 @@ backBtn{
    }
 
 backBtn{  margin-left: fill;}
+
+.bg-img{
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120%;
+  height: 100vh;
+}
