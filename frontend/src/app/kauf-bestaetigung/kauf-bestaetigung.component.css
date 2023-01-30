@@ -1,0 +1,10 @@
+.bg-img{
+  background-image: url("https://wallpaperaccess.com/full/1105642.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 123%;
+  height: 100vh;
+}
+h1,h2,h3{
+  color: #f2f2f2;
+}
