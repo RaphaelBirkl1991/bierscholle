@@ -1,15 +1,24 @@
-.bg-img{
-  background-image: url("https://images8.alphacoders.com/413/413078.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 385%;
-  height: 100vh;
+/*.bg-img{*/
+/*  background-image: url("https://images8.alphacoders.com/413/413078.jpg");*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  width: 385%;*/
+/*  height: 100vh;*/
+/*}*/
+
+#customerData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+
 
 h2,form{
   text-align: center;
   margin-top: 95px;
 }
 h2{
-  color: #f2f2f2;
+  color: black;
 }

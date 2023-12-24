@@ -11,12 +11,18 @@ backBtn{
 
 backBtn{  margin-left: fill;}
 
-.bg-img{
-  background-color: #f2f2f2;
+
+
+.warenkorb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Anpassen der maximalen Breite des Warenkorbs nach Bedarf */
   padding: 20px;
-  border-radius: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 120%;
-  height: 100vh;
+  border: 1px solid #ccc; /* Optional: Rahmen um den Warenkorb hinzufügen */
+  border-radius: 5px; /* Optional: Abrundung der Ecken des Warenkorbs */
 }
+
