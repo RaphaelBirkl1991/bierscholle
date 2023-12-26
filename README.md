@@ -1,14 +1,14 @@
 # Bierscholle 
 
-### Bierscholle is an Online Shop created within the 4 month Java Course. The shop is selling beer and uses REST to transfer Data between the UI and an H2 Development Database. 
+### Bierscholle is an Online Shop created within the 4 month Java-Course. The shop is selling beer and uses REST to transfer data between the UI and an H2 Development Database. 
 ### Four students of the AW-Akademie have participated in this project.
 
-### This Project contains two frameworks (Spring and Angular). To get the frontend running use "npm install" in the frontend directory. 
+### This Project contains two frameworks (Spring and Angular). To get the frontend running type "npm install" in the console (when you're in the frontend directory). For the backend you'll have to allow the annotation processing (Lombok). 
 
 ## Landing Page - Greet the happy penguin
 ![landing-page](markdown_assets/landing-page.png)
 
-## Prduct Page - Choose the article of your choice 
+## Product Page - Choose the article of your choice 
 ![product-list](markdown_assets/product-list.png)
 
 ## Product Details - Further information about your choice
